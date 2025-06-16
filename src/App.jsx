@@ -1,35 +1,68 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { FaPhoneAlt, FaEnvelope, FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram, FaArrowRight } from 'react-icons/fa'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header className="w-full">
+        {/* Top Bar */}
+        <div className="bg-[#2f2933] text-white text-sm flex justify-between items-center px-6 py-2">
+          <div className="flex items-center gap-4">
+            <div className="flex items-center gap-1">
+              <FaPhoneAlt />
+              <span>+111 (564) 568 25</span>
+            </div>
+            <span className="hidden sm:inline">|</span>
+            <div className="flex items-center gap-1">
+              <FaEnvelope className="text-[#b01010]" />
+              <span>needhelp.roofing@gmail.com</span>
+            </div>
+          </div>
+          <div className="flex items-center gap-3">
+            <FaFacebookF />
+            <FaTwitter />
+            <FaLinkedinIn />
+            <FaInstagram />
+            <button className="ml-4 border border-white text-[#b01010] bg-white px-3 py-1 rounded hover:bg-gray-200 transition">
+              GET HELP
+            </button>
+          </div>
+        </div>
+
+        {/* Main Nav */}
+        <div className="bg-white flex justify-between items-center px-6 py-4 shadow">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            {/* <img
+              src="/logo-placeholder.png"
+              alt="Righteous Logo"
+              className="h-12 bg-[#9f1313] p-2"
+            /> */}
+          </div>
+
+          {/* Nav Links */}
+          <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-[#2f2933]">
+            <a href="#" className="text-[#9f1313]">
+              HOME
+            </a>
+            <a href="#">ABOUT</a>
+            <a href="#">
+              SERVICES +
+            </a>
+            <a href="#">GALLERY</a>
+            <a href="#">PRICING</a>
+            <a href="#">BLOG</a>
+            <a href="#">FAQ</a>
+            <a href="#">REVIEWS</a>
+          </nav>
+
+          {/* Quote Button */}
+          <button className="bg-[#9f1313] text-white font-bold px-5 py-2 rounded hover:bg-[#800f0f] flex items-center gap-2">
+            GET A QUOTE <FaArrowRight />
+          </button>
+        </div>
+      </header>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
