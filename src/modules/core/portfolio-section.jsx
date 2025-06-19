@@ -49,7 +49,7 @@ export function PortfolioSection() {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="w-12 h-0.5 bg-red-700"></div>
+            <div className="w-12 h-0.5 bg-[#9B1915]"></div>
             <span className="text-red-700 font-medium text-sm tracking-wide uppercase">PORTFOLIO</span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-8">We're proud of the Same works</h2>
@@ -61,7 +61,7 @@ export function PortfolioSection() {
                 key={category.id}
                 onClick={() => setActiveFilter(category.id)}
                 className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-                  activeFilter === category.id ? "bg-red-700 text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
+                  activeFilter === category.id ? "bg-[#9B1915] text-white" : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
                 {category.label}
@@ -77,7 +77,7 @@ export function PortfolioSection() {
             <IoChevronBack className="w-5 h-5 text-gray-600" />
           </button>
 
-          <button className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-red-700 rounded-full shadow-lg flex items-center justify-center hover:bg-red-800 transition-colors">
+          <button className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 w-12 h-12 bg-[#9B1915] rounded-full shadow-lg flex items-center justify-center hover:bg-red-800 transition-colors">
             <IoChevronForward className="w-5 h-5 text-white" />
           </button>
 

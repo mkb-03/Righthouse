@@ -2,7 +2,7 @@ import React from "react";
 
 export function BookingForm() {
   return (
-    <div className="bg-red-700 p-8 lg:p-12 text-white">
+    <div className="bg-[#9B1915] p-8 lg:p-12 text-white">
       <div className="space-y-6">
         <h2 className="text-2xl font-bold mb-8">Book Roof solutions</h2>
 

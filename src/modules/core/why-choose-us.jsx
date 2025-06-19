@@ -6,7 +6,7 @@ export function WhyChooseUs() {
   return (
     <div className="w-full">
       {/* Statistics Bar */}
-      <div className="bg-red-700 text-white py-8">
+      <div className="bg-[#9B1915] text-white py-8">
         <div className="max-w-6xl mx-auto px-4">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
@@ -74,7 +74,7 @@ export function WhyChooseUs() {
                 </div>
 
                 {/* Speed Box */}
-                <div className="bg-red-700 text-white p-6 rounded-lg">
+                <div className="bg-[#9B1915] text-white p-6 rounded-lg">
                   <div className="w-12 h-12 bg-white bg-opacity-20 rounded-lg flex items-center justify-center mb-4">
                     <AiOutlineSetting className="w-6 h-6 text-white" />
                   </div>

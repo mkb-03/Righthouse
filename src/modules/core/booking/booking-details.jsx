@@ -7,7 +7,7 @@ export function BookingDetails() {
       {/* Header */}
       <div className="space-y-2">
         <div className="flex items-center gap-3">
-          <div className="w-12 h-0.5 bg-red-700"></div>
+          <div className="w-12 h-0.5 bg-[#9B1915]"></div>
           <span className="text-red-700 font-medium text-sm tracking-wide uppercase">BOOKING APPOINTMENT</span>
         </div>
       </div>
@@ -55,13 +55,13 @@ export function BookingDetails() {
           <span className="text-gray-700 font-bold">95%</span>
         </div>
         <div className="w-full bg-gray-200 rounded-full h-2">
-          <div className="bg-red-700 h-2 rounded-full" style={{ width: "95%" }}></div>
+          <div className="bg-[#9B1915] h-2 rounded-full" style={{ width: "95%" }}></div>
         </div>
       </div>
 
       {/* Contact Info */}
       <div className="flex items-center gap-4">
-        <div className="w-16 h-16 bg-red-700 rounded-full flex items-center justify-center">
+        <div className="w-16 h-16 bg-[#9B1915] rounded-full flex items-center justify-center">
           <AiOutlinePhone className="w-6 h-6 text-white" />
         </div>
         <div>
