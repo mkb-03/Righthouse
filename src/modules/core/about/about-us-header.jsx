@@ -1,0 +1,20 @@
+import { FaAngleDoubleRight } from "react-icons/fa";
+
+export function AboutUsHeader() {
+  return (
+    <div
+      className="relative h-60 bg-cover bg-center flex items-center justify-center"
+      style={{ backgroundImage: "url(/path-to-your-background.jpg)" }}
+    >
+      <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+      <div className="relative z-10 text-center text-white">
+        <h1 className="text-4xl font-bold mb-2">About Us</h1>
+        <div className="flex justify-center items-center space-x-2 text-sm">
+          <span className="text-gray-200">Home</span>
+          <FaAngleDoubleRight className="text-white text-xs" />
+          <span className="text-red-500 font-semibold">About Us</span>
+        </div>
+      </div>
+    </div>
+  );
+}

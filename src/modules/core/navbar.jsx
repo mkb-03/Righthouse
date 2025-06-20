@@ -9,7 +9,7 @@ import {
   FaArrowRight,
 } from "react-icons/fa";
 
-const Navbar = () => {
+export function Navbar() {
   return (
     <header className="w-full">
       {/* Top Bar */}
@@ -68,6 +68,4 @@ const Navbar = () => {
       </div>
     </header>
   );
-};
-
-export default Navbar;
+}

@@ -1,8 +1,8 @@
 import React from "react";
 import { FaArrowRight, FaArrowLeft, FaPlay } from "react-icons/fa";
-import heroSectionBg from "../../assets/heroSectionBg.jpg";// Adjust the path as necessary
+import heroSectionBg from "../../assets/heroSectionBg.jpg";
 
-const HeroSection = () => {
+export function HeroSection() {
   return (
     <section
       className="relative w-full h-[90vh] bg-cover bg-center text-white heroSectionBg"
@@ -73,6 +73,4 @@ const HeroSection = () => {
       </div>
     </section>
   );
-};
-
-export default HeroSection;
+}
