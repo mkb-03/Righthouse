@@ -1,35 +1,34 @@
 import React from "react";
 import { ProcessStep } from "./process-step";
 
-// Replace with actual icon imports
-// import iconInspection from "../assets/icons/inspection.svg";
-// import iconQuotation from "../assets/icons/quotation.svg";
-// import iconService from "../assets/icons/service.svg";
-// import iconFollowUp from "../assets/icons/followup.svg";
+import iconInspection from "../../../assets/inspection.svg";
+import iconQuotation from "../../../assets/quotation.svg";
+import iconService from "../../../assets/services.svg";
+import iconFollowUp from "../../../assets/follow-up.svg";
 
 const steps = [
   {
     step: "01",
-    icon: "iconInspection",
+    icon: iconInspection,
     title: "Inspection",
     description: "Curabitur nullad sit amet tempus convallis",
   },
   {
     step: "02",
-    icon: "iconQuotation",
+    icon: iconQuotation,
     title: "Quotation",
     description: "Curabitur nullad sit amet tempus convallis",
     active: true,
   },
   {
     step: "03",
-    icon: "iconService",
+    icon: iconService,
     title: "Service",
     description: "Curabitur nullad sit amet tempus convallis",
   },
   {
     step: "04",
-    icon: "iconFollowUp",
+    icon: iconFollowUp,
     title: "Follow-Up",
     description: "Curabitur nullad sit amet tempus convallis",
   },
@@ -37,15 +36,18 @@ const steps = [
 
 export function WorkingProcess() {
   return (
-    <section
-      className="py-20 px-4 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/assets/roof-bg.jpg')" }}
-    >
+    <section className="py-20 px-4 bg-cover bg-center bg-no-repeat bg-process-section">
       <div className="max-w-7xl mx-auto text-center">
-        <p className="text-[#b01010] uppercase text-sm font-semibold mb-2">
-          How it work
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#2f2933] mb-12">
+        <div className="flex items-center justify-center text-center gap-3">
+          <div>
+            <div className="w-7 h-0.5 bg-[#9B1915]"></div>
+            <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
+          </div>
+          <span className="text-[#9B1915] font-medium text-sm tracking-wide uppercase">
+            How it works
+          </span>
+        </div>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#2f2933] mb-12 mt-5">
           Standard Working Process
         </h2>
         <div className="flex flex-wrap justify-center gap-6 relative z-10">

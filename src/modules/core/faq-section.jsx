@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { IoEye, IoArrowForward } from "react-icons/io5";
+import faq1 from "../../assets/faq-1.jpg";
+import flatRoofing from "../../assets/flat-roofing.jpg";
 
 const faqData = [
   {
@@ -30,17 +32,18 @@ export function FaqSection() {
   };
 
   return (
-    <div className="py-16 bg-white">
+    <div className="py-16 bg-[#F3F1F2]">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
           <div className="space-y-8">
-            {/* Header */}
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-0.5 bg-[#9B1915]"></div>
-                <span className="text-red-700 font-medium text-sm tracking-wide uppercase">
-                  FAQ'S
+              <div className="flex gap-3">
+                <div>
+                  <div className="w-7 h-0.5 bg-[#9B1915]"></div>
+                  <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
+                </div>
+                <span className="text-[#9B1915] font-medium text-sm tracking-wide uppercase">
+                  FAQ's
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
@@ -48,7 +51,6 @@ export function FaqSection() {
               </h2>
             </div>
 
-            {/* FAQ Items */}
             <div className="space-y-4">
               {faqData.map((faq) => (
                 <div key={faq.id} className="border-b border-gray-200 pb-4">
@@ -77,20 +79,23 @@ export function FaqSection() {
               ))}
             </div>
 
-            {/* See All Button */}
             <button className="bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors">
               SEE ALL
               <IoArrowForward className="w-4 h-4" />
             </button>
           </div>
 
-          {/* Right Image */}
           <div className="relative">
-            <div className="aspect-[4/3] rounded-lg overflow-hidden">
+            <div className="flex  overflow-hidden">
               <img
-                src="/placeholder.svg?height=500&width=600"
+                src={faq1}
                 alt="Construction workers installing roof tiles"
-                className="w-full h-full object-cover"
+                className="w-1/2 h-full"
+              />
+              <img
+                src={flatRoofing}
+                alt="Construction workers installing roof tiles"
+                className="w-1/2 h-full"
               />
             </div>
           </div>

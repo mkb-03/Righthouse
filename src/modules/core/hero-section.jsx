@@ -31,7 +31,7 @@ export function HeroSection() {
     },
     {
       title: "24/7 Team Support",
-      icon: <img src={iconBox4} alt="Support" />,
+      icon: <img src={iconBox1} alt="Support" />,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor",
       isDark: false,

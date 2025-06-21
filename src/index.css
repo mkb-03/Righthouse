@@ -14,12 +14,11 @@ body {
   background-size: cover;
   background-position: center;
 }
-/* 
-@keyframes fillProgress {
-  from {
-    width: 0%;
-  }
-  to {
-    width: 95%;
-  }
-} */
+
+.bg-process-section {
+  background-image: linear-gradient(0deg, #ebebebe3, #ebebebe3),
+    url("./assets/roof-repair.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
