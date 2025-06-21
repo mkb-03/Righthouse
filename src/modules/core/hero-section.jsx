@@ -45,12 +45,12 @@ export function HeroSection() {
           <div className="max-w-7xl w-full">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex flex-col gap-3">
-                <button className="w-10 h-10 rounded-full bg-[#9f1313] flex items-center justify-center text-white">
+                {/* <button className="w-10 h-10 rounded-full bg-[#9f1313] flex items-center justify-center text-white">
                   <FaArrowRight />
                 </button>
                 <button className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#9f1313]">
                   <FaArrowLeft />
-                </button>
+                </button> */}
               </div>
 
               <div className="text-center md:text-left md:ms-25 flex-1">

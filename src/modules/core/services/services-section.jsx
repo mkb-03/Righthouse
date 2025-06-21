@@ -1,48 +1,55 @@
 import React from "react";
-import {ServiceCard} from "./service-card";
+import { ServicesSectionCard } from "./service-section-card";
+import roofRepair from "../../../assets/roof-repair.jpg";
+import roofReplacement from "../../../assets/roof-replacement.jpg";
+import roofInstallation from "../../../assets/roof-installation.jpg";
+import roofInspection from "../../../assets/roof-inspection.jpg";
+import flatRoofing from "../../../assets/flat-roofing.jpg";
+import chimneyRepair from "../../../assets/chimney-repair.jpg";
 
-// Sample icons – replace with actual icon paths or SVGs
-// import icon1 from "../assets/icons/icon1.svg";
-// import icon2 from "../assets/icons/icon2.svg";
-// import icon3 from "../assets/icons/icon3.svg";
-// ... import other icons similarly
+import roofRepairIcon from "../../../assets/icon-box-3.svg";
+import roofReplacementIcon from "../../../assets/roof-replacement.svg";
+import roofInstallationIcon from "../../../assets/roof-installation.svg";
+import flatRoofingIcon from "../../../assets/flat-roofing.svg";
+import chimneyRepairIcon from "../../../assets/chimney-repairs.svg";
+import roofInspectionIcon from "../../../assets/roof-inspection.svg";
 
-const services = [
+export const services = [
   {
-    image: "/assets/roof-repair.jpg",
-    icon: "icon1",
+    image: roofRepair,
+    icon: roofRepairIcon,
     title: "Roof Repair",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Expert repair services for all types of roofing issues.",
   },
   {
-    image: "/assets/roof-replacement.jpg",
-    icon: "icon2",
+    image: roofReplacement,
+    icon: roofReplacementIcon,
     title: "Roof Replacement",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Complete roof replacement with high-quality materials.",
   },
   {
-    image: "/assets/flat-roofing.jpg",
-    icon: "icon3",
+    image: flatRoofing,
+    icon: flatRoofingIcon,
     title: "Flat Roofing",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Durable and efficient flat roofing solutions.",
   },
   {
-    image: "/assets/roof-installation.jpg",
-    icon: "icon1",
+    image: roofInstallation,
+    icon: roofInstallationIcon,
     title: "Roof Installation",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Professional installation for new and existing buildings.",
   },
   {
-    image: "/assets/roof-inspection.jpg",
-    icon: "icon2",
+    image: roofInspection,
+    icon: roofInspectionIcon,
     title: "Roof Inspection",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Thorough inspection to ensure your roof's integrity.",
   },
   {
-    image: "/assets/chimney-repairs.jpg",
-    icon: "icon3",
+    image: chimneyRepair,
+    icon: chimneyRepairIcon,
     title: "Chimney Repairs",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Reliable chimney repair and maintenance services.",
   },
 ];
 
@@ -50,19 +57,25 @@ export function ServicesSection() {
   return (
     <section className="py-16 px-6 max-w-7xl mx-auto">
       <div className="text-center mb-12">
-        <p className="text-[#b01010] uppercase text-sm font-semibold">
-          Services
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#2f2933]">
+        <div className="flex items-center justify-center text-center gap-3">
+          <div>
+            <div className="w-7 h-0.5 bg-[#9B1915]"></div>
+            <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
+          </div>
+          <span className="text-[#9B1915] font-medium text-sm tracking-wide uppercase">
+            Services
+          </span>
+        </div>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#2f2933] mt-5">
           High-quality Services
         </h2>
       </div>
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-x-6 gap-y-30  sm:grid-cols-1 lg:grid-cols-3">
         {services.map((service, idx) => (
-          <ServiceCard key={idx} {...service} />
+          <ServicesSectionCard key={idx} {...service} />
         ))}
       </div>
-      <div className="flex justify-center mt-10">
+      <div className="flex justify-center mt-30">
         <button className="bg-[#b01010] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
           VIEW ALL SERVICES <span className="text-xs">↗</span>
         </button>
