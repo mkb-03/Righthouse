@@ -5,7 +5,7 @@ import { WhyChooseUs } from "../core/why-choose-us";
 import { FaqSection } from "../core/faq-section";
 import { ContactSection } from "../core/contact/contact-section";
 import { TestimonialsSection } from "../core/testimonial-section";
-import { PortfolioSection } from "../core/portfolio-section";
+import { PortfolioSection } from "../core/portfolio/portfolio-section";
 import { ServicesSection } from "../core/services/services-section";
 import { WorkingProcess } from "../core/process/working-process";
 

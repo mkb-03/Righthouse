@@ -1,7 +1,7 @@
 export function ContactInfoCard({ icon, title, content, className = "" }) {
   return (
     <div
-      className={`bg-[#9B1915] text-white p-6 rounded-lg flex items-center gap-4 ${className}`}
+      className={`bg-[#9B1915] text-white p-3 rounded-lg flex items-center gap-4 ${className}`}
     >
       <div className="flex-shrink-0">{icon}</div>
       <div>

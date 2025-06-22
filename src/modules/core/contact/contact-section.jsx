@@ -5,54 +5,50 @@ import { BookingForm } from "../booking/booking-form";
 export function ContactSection() {
   return (
     <div className="py-16 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="grid lg:grid-cols-3 gap-8">
-          {/* Section 1: Map and Form */}
-          <div className="lg:col-span-2 relative">
-            {/* Map */}
-            <div className="bg-white rounded-lg overflow-hidden shadow-lg h-full min-h-[500px]">
+      <div className="mx-auto px-2">
+        <div className="grid lg:grid-cols-2 gap-8">
+          <div className="relative">
+            <div className="bg-white overflow-hidden shadow-lg h-full min-h-[500px]">
               <img
                 src="/placeholder.svg?height=500&width=800"
                 alt="Map"
                 className="w-full h-full object-cover"
               />
-
             </div>
 
-            {/* Form positioned on right 50% of map */}
-            <div className="hidden lg:block absolute top-1/2 left-1/2 transform -translate-y-1/2  w-1/2 max-w-md z-10">
+            <div className="hidden lg:block absolute top-22 left-120 transform -translate-x-1/2 -translate-y-1/2 w-3/4 max-w-md z-10 h-[200px]">
               <div className="bg-white shadow-xl rounded-lg">
                 <BookingForm />
               </div>
             </div>
 
-            {/* Mobile fallback: Show form below map */}
             <div className="mt-6 lg:hidden">
               <BookingForm />
             </div>
           </div>
 
-          {/* Section 2: Contact Information */}
           <div className="space-y-8">
-            {/* Header */}
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-12 h-0.5 bg-[#9B1915]"></div>
-                <span className="text-red-700 font-medium text-sm tracking-wide uppercase">
-                  CONTACT US
+              <div className="flex gap-3">
+                <div>
+                  <div className="w-7 h-0.5 bg-[#9B1915]"></div>
+                  <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
+                </div>
+                <span className="text-[#9B1915] font-medium text-sm tracking-wide uppercase">
+                  Contact Us
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
                 Quality roofing for every Structure.
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip.
               </p>
             </div>
 
-            {/* Contact Info Cards */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <ContactInfoCard
                 icon={<FaPhone className="w-6 h-6 text-white" />}
