@@ -16,7 +16,11 @@ export function Home() {
       <Booking />
       <WhyChooseUs />
       <ServicesSection />
-      <PortfolioSection />
+
+      <PortfolioSection
+        title="Portfolio"
+        subtitle="We're proud of the Same works"
+      />
       <WorkingProcess />
       <TestimonialsSection />
       <FaqSection />

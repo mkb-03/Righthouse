@@ -4,17 +4,17 @@ import { TestimonialsSection } from "../core/testimonial/testimonial-section";
 import { FaqSection } from "../core/faq-section";
 import { ContactSection } from "../core/contact/contact-section";
 import { PageHeader } from "../core/page-header";
-import { AboutSection } from "../core/about/about-section";
-import { CoreValuesSection } from "../core/core-value-section";
-import { CommercialBanner } from "../core/commercial-banner";
+import { PortfolioSection } from "../core/portfolio/portfolio-section";
 
-export function AboutUs() {
+export function Portfolio() {
   return (
     <>
-      <PageHeader title="About Us" />
-      <AboutSection />
-      <CoreValuesSection />
-      <CommercialBanner />
+      <PageHeader title="Portfolio" />
+      <PortfolioSection
+        title="Portfolio"
+        subtitle="We're proud of the Same works"
+        buttonText="LOAD MORE"
+      />
       <WorkingProcess />
       <TestimonialsSection />
       <FaqSection />

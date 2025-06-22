@@ -8,7 +8,7 @@ import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 import "swiper/css";
 import "swiper/css/navigation";
 
-export function PortfolioSection() {
+export function PortfolioSection({ title, subtitle, buttonText }) {
   const [activeFilter, setActiveFilter] = useState("all");
   const prevRef = useRef(null);
   const nextRef = useRef(null);
@@ -38,11 +38,13 @@ export function PortfolioSection() {
               <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
             </div>
             <span className="text-[#9B1915] font-medium text-sm tracking-wide uppercase">
-              Services
+            
+              {title}
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2f2933] mt-5">
-            High-quality Services
+       
+            {subtitle}
           </h2>
           <div className="flex flex-wrap justify-center gap-2 mb-8 mt-10">
             {filterCategories.map((category) => (
@@ -102,6 +104,12 @@ export function PortfolioSection() {
             <IoChevronForward className="w-5 h-5 text-white" />
           </button>
         </div>
+
+       {buttonText && <div className="mt-10 flex justify-center">
+          <button className="bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
+            {buttonText} <span className="text-xs">↗</span>
+          </button>
+        </div>}
       </div>
     </div>
   );
