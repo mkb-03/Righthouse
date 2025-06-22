@@ -21,7 +21,7 @@ export function Navbar() {
           </div>
           <span className="hidden sm:inline">|</span>
           <div className="flex items-center gap-1">
-            <FaEnvelope className="text-[#b01010]" />
+            <FaEnvelope className="text-[#9B1915]" />
             <span>needhelp.roofing@gmail.com</span>
           </div>
         </div>
@@ -30,7 +30,7 @@ export function Navbar() {
           <FaTwitter />
           <FaLinkedinIn />
           <FaInstagram />
-          <button className="ml-4 border border-white text-[#b01010] bg-white px-3 py-1 rounded hover:bg-gray-200 transition">
+          <button className="ml-4 border border-white text-[#9B1915] bg-white px-3 py-1 rounded hover:bg-gray-200 transition">
             GET HELP
           </button>
         </div>

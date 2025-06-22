@@ -76,7 +76,7 @@ export function ServicesSection() {
         ))}
       </div>
       <div className="flex justify-center mt-30">
-        <button className="bg-[#b01010] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
+        <button className="bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
           VIEW ALL SERVICES <span className="text-xs">↗</span>
         </button>
       </div>

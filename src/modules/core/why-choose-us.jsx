@@ -1,9 +1,4 @@
 import React from "react";
-import {
-  AiOutlineSetting,
-  AiOutlineTrophy,
-  AiOutlineHome,
-} from "react-icons/ai";
 import manWorking from "../../assets/manWorking.jpg";
 import quality from "../../assets/service-1.svg";
 import speed from "../../assets/service-2.svg";
@@ -13,11 +8,11 @@ import { Counter } from "./counter";
 export function WhyChooseUs() {
   return (
     <div className="w-full relative my-15 ">
-      <div className="absolute left-1/2 top-7 transform -translate-x-1/2 z-20 w-11/12 max-w-6xl md:block hidden">
+      <div className="absolute left-1/2 top-7 transform -translate-x-1/2 z-20 w-11/12 max-w-6xl lg:block hidden">
         <Counter />
       </div>
 
-      <div className="block md:hidden">
+      <div className="block lg:hidden">
         <Counter />
       </div>
 

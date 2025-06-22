@@ -28,7 +28,7 @@ export function ServiceCard({
         {description}
       </p>
       {showReadMore && (
-        <div className="pt-2 text-sm font-semibold text-[#b01010] flex items-center gap-1 cursor-pointer">
+        <div className="pt-2 text-sm font-semibold text-[#9B1915] flex items-center gap-1 cursor-pointer">
           READ MORE <span className="text-xs">↗</span>
         </div>
       )}

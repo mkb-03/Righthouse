@@ -8,7 +8,7 @@ export function ProcessStep({ step, icon, title, description, active = false }) 
           active ? "bg-[#2f2933] text-white" : "bg-white text-[#2f2933]"
         }`}
       >
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#b01010] text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-semibold">
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#9B1915] text-white w-8 h-8 flex items-center justify-center rounded-full text-sm font-semibold">
           {step}
         </div>
         <img src={icon} alt={title} className="w-10 h-10 mb-2" />

@@ -36,7 +36,7 @@ const steps = [
 
 export function WorkingProcess() {
   return (
-    <section className="py-20 px-4 bg-cover bg-center bg-no-repeat bg-process-section">
+    <section className="py-20 px-4 bg-process-section">
       <div className="max-w-7xl mx-auto text-center">
         <div className="flex items-center justify-center text-center gap-3">
           <div>
@@ -56,7 +56,7 @@ export function WorkingProcess() {
           ))}
         </div>
         <div className="mt-10 flex justify-center">
-          <button className="bg-[#b01010] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
+          <button className="bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
             BOOK NOW <span className="text-xs">↗</span>
           </button>
         </div>
