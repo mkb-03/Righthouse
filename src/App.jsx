@@ -5,6 +5,7 @@ import { Home } from "./modules/pages/home";
 import { Portfolio } from "./modules/pages/portfolio";
 import { AboutUs } from "./modules/pages/about-us";
 import { Footer } from "./modules/core/footer";
+import { FAQ } from "./modules/pages/faq";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/frequently-asked-question" element={<FAQ />} />
       </Routes>
       <Footer />
     </Router>

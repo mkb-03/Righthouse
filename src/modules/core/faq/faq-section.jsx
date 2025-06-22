@@ -1,31 +1,14 @@
 import { useState } from "react";
 import { IoEye, IoArrowForward } from "react-icons/io5";
-import faq1 from "../../assets/faq-1.jpg";
-import flatRoofing from "../../assets/flat-roofing.jpg";
+import { QueryForm } from "./query-form";
 
-const faqData = [
-  {
-    id: 1,
-    question: "How often do you need to repair a roof?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-  },
-  {
-    id: 2,
-    question: "How long should a roof repair take?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-  },
-  {
-    id: 3,
-    question: "How often do you need to repair a roof?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco",
-  },
-];
-
-export function FaqSection() {
-  const [openFaq, setOpenFaq] = useState(2);
+export function FaqSection({
+  faqData = [],
+  showImages = false,
+  showContactForm = false,
+  images = [],
+}) {
+  const [openFaq, setOpenFaq] = useState(faqData[0]?.id || null);
 
   const toggleFaq = (id) => {
     setOpenFaq(openFaq === id ? null : id);
@@ -86,18 +69,19 @@ export function FaqSection() {
           </div>
 
           <div className="relative">
-            <div className="flex  overflow-hidden">
-              <img
-                src={faq1}
-                alt="Construction workers installing roof tiles"
-                className="w-1/2 h-full"
-              />
-              <img
-                src={flatRoofing}
-                alt="Construction workers installing roof tiles"
-                className="w-1/2 h-full"
-              />
-            </div>
+            {showImages && images.length > 0 && (
+              <div className="flex overflow-hidden">
+                {images.map((img, idx) => (
+                  <img
+                    key={idx}
+                    src={img.src}
+                    alt={img.alt || ""}
+                    className="w-1/2 h-full"
+                  />
+                ))}
+              </div>
+            )}
+            {showContactForm && <QueryForm heading="Ask a Question" />}
           </div>
         </div>
       </div>
