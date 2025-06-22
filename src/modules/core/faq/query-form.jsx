@@ -3,6 +3,7 @@ import React from "react";
 export function QueryForm({
   heading = "Book Roof solutions",
   bgColor = "#9B1915",
+  headingColor
 }) {
   return (
     <div
@@ -10,7 +11,10 @@ export function QueryForm({
       style={{ backgroundColor: bgColor }}
     >
       <div className="space-y-6">
-        <h2 className="text-[24px] font-bold mb-8 text-center md:text-left">
+        <h2
+          className="text-[24px] font-bold mb-8 text-center md:text-left"
+          style={{ color: headingColor }}
+        >
           {heading}
         </h2>
 

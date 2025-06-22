@@ -4,7 +4,7 @@ import { IoArrowForward } from "react-icons/io5";
 export function BookAppointment() {
   return (
     <div className="bg-[#9B1915] text-white py-8">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div className="max-w-6xl mx-auto px-7 flex flex-col md:flex-row items-center justify-between gap-4">
         <div>
           <p className="text-sm font-medium mb-2">NEED ANY HELP?</p>
           <h3 className="text-2xl lg:text-3xl font-bold">

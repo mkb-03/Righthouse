@@ -3,11 +3,11 @@ import {
   FaTwitter,
   FaLinkedinIn,
   FaInstagram,
-  FaArrowUp,
   FaPaperPlane,
 } from "react-icons/fa";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 import { BookAppointment } from "./book-appointment";
+import logo from "../../assets/logo-color.png";
 
 export function Footer() {
   return (
@@ -24,21 +24,8 @@ export function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="space-y-4">
                 <div className="flex items-center gap-2">
-                  <div className="flex">
-                    <div className="w-8 h-8 bg-[#9B1915] rounded-sm flex items-center justify-center">
-                      <div className="w-4 h-4 bg-white rounded-sm"></div>
-                    </div>
-                    <div className="w-8 h-8 bg-red-600 rounded-sm flex items-center justify-center -ml-2">
-                      <div className="w-4 h-4 bg-white rounded-sm"></div>
-                    </div>
-                  </div>
                   <div>
-                    <h3 className="font-bold text-gray-800 text-lg">
-                      RIGHTEOUS
-                    </h3>
-                    <p className="text-xs text-gray-600">
-                      ROOFING & PROPERTY MAINTENANCE LTD
-                    </p>
+                    <img src={logo} alt="Righteous" className="w-[180px]" />
                   </div>
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed">
