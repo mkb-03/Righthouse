@@ -1,9 +1,8 @@
 import React from "react";
-import { FaArrowRight, FaArrowLeft, FaPlay } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import iconBox1 from "../../assets/icon-box-1.svg";
 import iconBox2 from "../../assets/icon-box-2.svg";
 import iconBox3 from "../../assets/icon-box-3.svg";
-import iconBox4 from "../../assets/icon-box-4.svg";
 import { ServiceCard } from "./service-card";
 
 export function HeroSection() {

@@ -6,6 +6,7 @@ import {
   FaArrowUp,
   FaPaperPlane,
 } from "react-icons/fa";
+import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 import { BookAppointment } from "./book-appointment";
 
 export function Footer() {
@@ -190,7 +191,7 @@ export function Footer() {
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
               className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors"
             >
-              <FaArrowUp className="w-4 h-4 text-[#9B1915]" />
+              <MdOutlineKeyboardDoubleArrowUp className="w-6 h-6 text-[#9B1915]" />
             </button>
 
             <div className="flex items-center gap-4 text-sm">

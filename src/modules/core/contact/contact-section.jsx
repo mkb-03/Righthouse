@@ -8,7 +8,7 @@ export function ContactSection() {
       <div className="mx-auto px-2">
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="relative">
-            <div className="bg-white overflow-hidden shadow-lg h-full min-h-[500px]">
+            <div className="bg-white overflow-hidden shadow-lg h-full min-h-[550px]">
               <img
                 src="/placeholder.svg?height=500&width=800"
                 alt="Map"
@@ -16,7 +16,7 @@ export function ContactSection() {
               />
             </div>
 
-            <div className="hidden lg:block absolute top-22 left-120 transform -translate-x-1/2 -translate-y-1/2 w-3/4 max-w-md z-10 h-[200px]">
+            <div className="hidden lg:block absolute top-25 left-130 transform -translate-x-1/2 -translate-y-1/2 w-[350px] max-w-sm z-10 h-[150px]">
               <div className="bg-white shadow-xl rounded-lg">
                 <BookingForm />
               </div>
