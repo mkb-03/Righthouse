@@ -7,6 +7,7 @@ export function FaqSection({
   showImages = false,
   showContactForm = false,
   images = [],
+  gridClass = "lg:grid-cols-2",
 }) {
   const [openFaq, setOpenFaq] = useState(faqData[0]?.id || null);
 
@@ -17,7 +18,7 @@ export function FaqSection({
   return (
     <div className="py-16 bg-[#F3F1F2]">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className={`grid gap-12 items-center ${gridClass}`}>
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="flex gap-3">

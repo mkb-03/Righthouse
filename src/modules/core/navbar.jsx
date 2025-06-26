@@ -15,7 +15,7 @@ import logo from "../../assets/white-logo.svg";
 const navLinks = [
   { href: "/", label: "HOME", active: true },
   { href: "/about-us", label: "ABOUT" },
-  { href: "#", label: "SERVICES" },
+  { href: "/service", label: "SERVICES" },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact-us", label: "Contact Us" },

@@ -15,7 +15,7 @@ export function Counter() {
               alt="userExperience"
               className="w-8 h-8 mr-2"
             />
-            <span className="text-4xl font-bold">25+</span>
+            <span className="text-4xl font-bold">30+</span>
           </div>
           <p className="text-sm">Years Of Experience</p>
         </div>

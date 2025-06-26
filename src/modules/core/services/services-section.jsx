@@ -18,40 +18,59 @@ export const services = [
   {
     image: roofRepair,
     icon: roofRepairIcon,
-    title: "Roof Repair",
-    description: "Expert repair services for all types of roofing issues.",
+    title: "Pitched Roofs",
+    description: "Expert repair and installation services for pitched roofs of all types.",
   },
   {
     image: roofReplacement,
     icon: roofReplacementIcon,
-    title: "Roof Replacement",
-    description: "Complete roof replacement with high-quality materials.",
+    title: "Skylights / Velux",
+    description: "Professional installation and repair of skylights and Velux windows.",
   },
   {
     image: flatRoofing,
     icon: flatRoofingIcon,
-    title: "Flat Roofing",
-    description: "Durable and efficient flat roofing solutions.",
+    title: "Flat Roofs",
+    description: "Durable and energy-efficient solutions for all flat roofing needs.",
   },
   {
     image: roofInstallation,
     icon: roofInstallationIcon,
-    title: "Roof Installation",
-    description: "Professional installation for new and existing buildings.",
+    title: "Fascias & Soffits",
+    description: "Enhance and protect your roofline with quality fascias and soffits.",
   },
   {
     image: roofInspection,
     icon: roofInspectionIcon,
-    title: "Roof Inspection",
-    description: "Thorough inspection to ensure your roof's integrity.",
+    title: "Drone Surveys",
+    description: "Advanced drone inspections to assess roof condition safely and accurately.",
   },
   {
     image: chimneyRepair,
     icon: chimneyRepairIcon,
-    title: "Chimney Repairs",
-    description: "Reliable chimney repair and maintenance services.",
+    title: "Chimneys",
+    description: "Comprehensive chimney repair, maintenance, and rebuild services.",
   },
+  // {
+  //   image: roofRepair,
+  //   icon: roofRepairIcon,
+  //   title: "Roof Insulation",
+  //   description: "Improve energy efficiency with high-quality roof insulation solutions.",
+  // },
+  // {
+  //   image: roofReplacement,
+  //   icon: roofReplacementIcon,
+  //   title: "Guttering",
+  //   description: "Installation and repair of gutters to ensure proper drainage and protection.",
+  // },
+  //   {
+  //   image: roofInstallation,
+  //   icon: roofInstallationIcon,
+  //   title: "Fascias & Soffits",
+  //   description: "Enhance and protect your roofline with quality fascias and soffits.",
+  // },
 ];
+
 
 export function ServicesSection() {
   return (
