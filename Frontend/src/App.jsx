@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./modules/core/navbar";
-import { Home } from "./modules/pages/home";
+import { Home } from "./modules/pages/home.jsx";
 import { Portfolio } from "./modules/pages/portfolio";
 import { AboutUs } from "./modules/pages/about-us";
 import { Footer } from "./modules/core/footer";
