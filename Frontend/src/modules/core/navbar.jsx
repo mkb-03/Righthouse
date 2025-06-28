@@ -9,13 +9,27 @@ import {
   FaArrowRight,
   FaBars,
   FaTimes,
+  FaChevronDown,
 } from "react-icons/fa";
 import logo from "../../assets/white-logo.svg";
 
 const navLinks = [
   { href: "/", label: "HOME", active: true },
   { href: "/about-us", label: "ABOUT" },
-  { href: "/service", label: "SERVICES" },
+  {
+    href: "/service",
+    label: "SERVICES",
+    dropdown: [
+      "Pitched Roofs",
+      "Flat Roofs",
+      "Skylights / Velux",
+      "Drone Surveys",
+      "Fascias & Soffits",
+      "Chimneys",
+      "Roof Insulation",
+      "Guttering",
+    ],
+  },
   { href: "/portfolio", label: "Portfolio" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact-us", label: "Contact Us" },
@@ -23,6 +37,8 @@ const navLinks = [
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   return (
     <header>
@@ -73,13 +89,57 @@ export function Navbar() {
 
             <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-[#2f2933] uppercase w-full">
               {navLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className={link.active ? "text-[#9f1313]" : ""}
-                >
-                  {link.label}
-                </a>
+                <div key={link.label} className="relative">
+                  {link.dropdown ? (
+                    <div
+                      className="relative"
+                      onMouseEnter={() => setServicesDropdownOpen(true)}
+                      onMouseLeave={() => setServicesDropdownOpen(false)}
+                    >
+                      <div className="flex items-center gap-1">
+                        <a
+                          href={link.href}
+                          className="hover:text-[#9f1313] transition-colors"
+                        >
+                          {link.label}
+                        </a>
+                        <FaChevronDown className="text-xs" />
+                      </div>
+
+                      {/* Dropdown Menu */}
+                      <div
+                        className={`absolute top-full left-0 mt-4 w-64 bg-white shadow-lg border border-gray-200 rounded-md z-50 transition-all duration-200 ${
+                          servicesDropdownOpen
+                            ? "opacity-100 visible"
+                            : "opacity-0 invisible"
+                        }`}
+                      >
+                        <div className="py-2">
+                          {link.dropdown.map((service, index) => (
+                            <a
+                              key={index}
+                              href={`/service/${service
+                                .toLowerCase()
+                                .replace(/[\/&\s]+/g, "-")
+                                .replace(/-+/g, "-")
+                                .replace(/^-|-$/g, "")}`}
+                              className="block px-4 py-2 text-sm text-[#2f2933] hover:bg-gray-100 hover:text-[#9f1313] transition-colors"
+                            >
+                              {service}
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+                  ) : (
+                    <a
+                      href={link.href}
+                      className={link.active ? "text-[#9f1313]" : ""}
+                    >
+                      {link.label}
+                    </a>
+                  )}
+                </div>
               ))}
             </nav>
 
@@ -105,14 +165,60 @@ export function Navbar() {
               <div className="flex flex-col items-center justify-center h-full gap-8">
                 <nav className="flex flex-col items-center gap-6 text-lg font-semibold text-[#2f2933] uppercase">
                   {navLinks.map((link) => (
-                    <a
-                      key={link.label}
-                      href={link.href}
-                      className={link.active ? "text-[#9f1313]" : ""}
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {link.label}
-                    </a>
+                    <div key={link.label} className="text-center w-full">
+                      {link.dropdown ? (
+                        <div className="flex flex-col items-center w-full">
+                          <div className="flex items-center gap-2 cursor-pointer w-full justify-center">
+                            <a
+                              href={link.href}
+                              className="hover:text-[#9f1313] transition-colors"
+                              onClick={() => setMenuOpen(false)}
+                            >
+                              {link.label}
+                            </a>
+                            <FaChevronDown
+                              className={`text-xs transition-transform duration-400 cursor-pointer ${
+                                mobileServicesOpen ? "rotate-180" : ""
+                              }`}
+                              onClick={() =>
+                                setMobileServicesOpen(!mobileServicesOpen)
+                              }
+                            />
+                          </div>
+                          <div
+                            className={`mt-4 flex flex-col gap-4 w-full text-center ${
+                              mobileServicesOpen ? "block" : "hidden"
+                            }`}
+                          >
+                            {link.dropdown.map((service, index) => (
+                              <a
+                                key={index}
+                                href={`/service/${service
+                                  .toLowerCase()
+                                  .replace(/[\/&\s]+/g, "-")
+                                  .replace(/-+/g, "-")
+                                  .replace(/^-|-$/g, "")}`}
+                                className="text-sm text-[#2f2933] hover:text-[#9f1313] transition-colors pl-4"
+                                onClick={() => {
+                                  setMenuOpen(false);
+                                  setMobileServicesOpen(false);
+                                }}
+                              >
+                                {service}
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      ) : (
+                        <a
+                          href={link.href}
+                          className={link.active ? "text-[#9f1313]" : ""}
+                          onClick={() => setMenuOpen(false)}
+                        >
+                          {link.label}
+                        </a>
+                      )}
+                    </div>
                   ))}
                 </nav>
                 <button

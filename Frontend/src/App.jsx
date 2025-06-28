@@ -9,6 +9,7 @@ import { FAQ } from "./modules/pages/faq";
 import { Contact } from "./modules/pages/contact-us";
 import { Service } from "./modules/pages/service";
 import { SingleService } from "./modules/pages/single-service";
+import { DynamicService } from "./modules/pages/dynamic-service";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/service" element={<Service />} />
-        <Route path="/single-service" element={<SingleService />} />
+        <Route path="/service/:serviceSlug" element={<DynamicService />} />
+        {/* <Route path="/single-service" element={<SingleService />} /> */}
       </Routes>
       <Footer />
     </Router>
