@@ -19,7 +19,7 @@ export function HeroSection() {
       icon: <img src={iconBox2} alt="Maintenance" />,
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor",
-      isDark: true,
+      isDark: false,
     },
     {
       title: "Emergency",

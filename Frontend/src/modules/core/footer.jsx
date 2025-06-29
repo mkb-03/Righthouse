@@ -159,9 +159,9 @@ export function Footer() {
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="flex-1 px-4 py-3 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
+                    className="bg-[#9B1915] flex-1 px-4 py-3 placeholder-white border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
                   />
-                  <button className="bg-[#9B1915] hover:bg-red-800 text-white px-4 py-3 rounded-r-md transition-colors">
+                  <button className="bg-white hover:bg-red-800 text-[#9B1915] px-4 py-3 rounded-r-md transition-colors">
                     <FaPaperPlane className="w-4 h-4" />
                   </button>
                 </div>
