@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./modules/core/navbar";
 import { Home } from "./modules/pages/Home.jsx";
 import { Portfolio } from "./modules/pages/portfolio";
-import { AboutUs } from "./modules/pages/about-us.jsx";
+import { AboutUs } from "/src/modules/pages/about-us.jsx";
 import { Footer } from "./modules/core/footer";
 import { FAQ } from "./modules/pages/faq";
 import { Contact } from "./modules/pages/contact-us";
