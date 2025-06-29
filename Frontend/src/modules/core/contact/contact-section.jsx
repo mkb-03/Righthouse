@@ -4,23 +4,23 @@ import { BookingForm } from "../booking/booking-form";
 
 export function ContactSection() {
   return (
-    <div className="py-16 bg-gray-50">
+    <div className="py- my-4 bg-gray-50">
       <div className="mx-auto px-2">
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="relative">
-            <div className="bg-white overflow-hidden shadow-lg h-full min-h-[550px]">
+            <div className="overflow-hidden shadow-lg h-full min-h-[550px]">
               <img
                 src="/placeholder.svg?height=500&width=800"
                 alt="Map"
-                className="w-full h-full object-cover"
+                className="w-100px h-full object-cover"
               />
             </div>
 
-            <div className="hidden lg:block absolute top-25 left-130 transform -translate-x-1/2 -translate-y-1/2 w-[350px] max-w-sm z-10 h-[150px]">
+            {/* <div className="hidden lg:block absolute top-25 left-130 transform -translate-x-1/2 -translate-y-1/2 w-[350px] max-w-sm z-10 h-[150px]">
               <div className="bg-white shadow-xl rounded-lg">
                 <BookingForm />
               </div>
-            </div>
+            </div> */}
 
             <div className="mt-6 lg:hidden">
               <BookingForm />
