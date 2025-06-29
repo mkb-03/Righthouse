@@ -19,7 +19,7 @@ export function Footer() {
         <BookAppointment />
       </div>
       <footer className="bg-white pt-25 bg-process-section">
-        <div className="py-12">
+        <div className="py-12 px-[10px]">
           <div className="max-w-6xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="space-y-4">

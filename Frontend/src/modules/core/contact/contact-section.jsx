@@ -1,6 +1,9 @@
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaTools } from "react-icons/fa";
 import { ContactInfoCard } from "./contact-info-card";
 import { BookingForm } from "../booking/booking-form";
+import location from "../../../assets/location.svg";
+import email from "../../../assets/email.svg";
+import qualityRoof from "../../../assets/contact-roof-repair.svg";
+import contactIcon from "../../../assets/contact-icon.svg";
 
 export function ContactSection() {
   return (
@@ -27,7 +30,7 @@ export function ContactSection() {
             </div>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 lg:mt-0 mt-130">
             <div className="space-y-4">
               <div className="flex gap-3">
                 <div>
@@ -50,23 +53,47 @@ export function ContactSection() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <ContactInfoCard
-                icon={<FaPhone className="w-6 h-6 text-white" />}
+            <ContactInfoCard
+                icon={
+                  <img
+                    src={contactIcon}
+                    alt="contactIcon"
+                    className="w-8 h-8 text-white"
+                  />
+                }
                 title="Call Us"
                 content="+123 (456) 789-0118"
               />
               <ContactInfoCard
-                icon={<FaEnvelope className="w-6 h-6 text-white" />}
+                icon={
+                  <img
+                    src={email}
+                    alt="Email"
+                    className="w-8 h-8 text-white"
+                  />
+                }
                 title="Email Us"
                 content="info@example.com"
               />
               <ContactInfoCard
-                icon={<FaMapMarkerAlt className="w-6 h-6 text-white" />}
+                icon={
+                  <img
+                    src={location}
+                    alt="Location"
+                    className="w-8 h-8 text-white"
+                  />
+                }
                 title="Address"
                 content="Mesa, Wolverhampton"
               />
               <ContactInfoCard
-                icon={<FaTools className="w-6 h-6 text-white" />}
+                icon={
+                  <img
+                    src={qualityRoof}
+                    alt="Quality Roof"
+                    className="w-8 h-8 text-white"
+                  />
+                }
                 title="Quality Roof"
                 content="Repair"
               />

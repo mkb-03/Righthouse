@@ -31,7 +31,7 @@ export function Home() {
         showImages={true}
         images={[
           { src: faq1, alt: "FAQ 1" },
-          { src: flatRoofing, alt: "Flat Roofing" },
+          { src: flatRoofing, alt: "Flat Roofing", class: "flex self-end" },
         ]}
       />
       <ContactSection />

@@ -77,7 +77,7 @@ export function FaqSection({
                     key={idx}
                     src={img.src}
                     alt={img.alt || ""}
-                    className="w-1/2 h-full"
+                    className={`w-1/2 h-full ${img.class || ""}`}
                   />
                 ))}
               </div>

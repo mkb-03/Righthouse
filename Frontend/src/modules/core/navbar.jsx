@@ -63,7 +63,7 @@ export function Navbar() {
                 <span>needhelp.roofing@gmail.com</span>
               </div>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 pe-[70px]">
               <FaFacebookF />
               <FaTwitter />
               <FaLinkedinIn />
@@ -74,7 +74,7 @@ export function Navbar() {
             </div>
           </div>
 
-          <div className="bg-white flex items-center px-6 md:px-6 py-10 md:py-2 relative">
+          <div className="bg-white flex items-center justify-center px-6 md:px-6 py-10 md:py-2 relative">
             <button
               className="md:hidden absolute right-6 top-1/2 -translate-y-1/2 z-30"
               onClick={() => setMenuOpen((prev) => !prev)}
@@ -87,7 +87,7 @@ export function Navbar() {
               )}
             </button>
 
-            <nav className="hidden md:flex items-center gap-6 text-sm font-semibold text-[#2f2933] uppercase w-full">
+            <nav className="hidden md:flex items-center justify-center  gap-6 text-sm font-semibold text-[#2f2933] uppercase w-full">
               {navLinks.map((link) => (
                 <div key={link.label} className="relative">
                   {link.dropdown ? (
@@ -144,7 +144,7 @@ export function Navbar() {
             </nav>
 
             <div className="hidden md:flex">
-              <button className="bg-[#9f1313] text-white font-bold px-8 py-2 rounded hover:bg-[#800f0f] flex items-center gap-2 whitespace-nowrap w-[200px]">
+              <button className="bg-[#9f1313] text-white font-bold px-8 py-2 rounded hover:bg-[#800f0f] flex items-center gap-2 w-[205px]">
                 GET A QUOTE <FaArrowRight />
               </button>
             </div>
