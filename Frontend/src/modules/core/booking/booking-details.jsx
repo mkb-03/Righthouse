@@ -11,20 +11,20 @@ export function BookingDetails() {
   }, []);
 
   return (
-    <div className="p-8 lg:p-12 space-y-8 text-center md:text-left">
-      <div className="space-y-2">
-        <div className="flex items-center gap-3 justify-center md:justify-start">
+    <div className="p-8 lg:p-12 space-y-8 text-center lg:text-left">
+      <div className="space-y-2 ">
+        <div className="flex items-center gap-3 justify-center lg:justify-start">
           <div>
             <div className="w-7 h-0.5 bg-[#9B1915]"></div>
             <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
           </div>
-          <span className="text-[#9B1915] font-medium text-sm tracking-wide uppercase">
+          <span className="text-[#9B1915] font-medium text-sm tracking-wide uppercase text-center lg:text-left">
             BOOKING APPOINTMENT
           </span>
         </div>
       </div>
 
-      <div className="space-y-6">
+      <div className="space-y-6 text-center lg:text-start">
         <h1 className="text-3xl lg:text-[45px] font-bold text-gray-800 leading-tight">
           Get your Roofing Solutions With Our Profession
         </h1>
@@ -38,7 +38,7 @@ export function BookingDetails() {
       </div>
 
       <div className="grid sm:grid-cols-2 gap-6">
-        <div className="flex items-start gap-4 justify-center md:justify-start">
+        <div className="flex items-start gap-4 justify-center lg:justify-start">
           <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
             <img src={house} alt="house" />
           </div>
@@ -48,7 +48,7 @@ export function BookingDetails() {
           </div>
         </div>
 
-        <div className="flex items-start gap-4 justify-center md:justify-start">
+        <div className="flex items-start gap-4 justify-center lg:justify-start">
           <div className="w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
             <img src={house} alt="house" />
           </div>
@@ -91,7 +91,7 @@ export function BookingDetails() {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 justify-center md:justify-start">
+      <div className="flex items-center gap-4 justify-center lg:justify-start">
         <div className="w-16 h-16 bg-[#9B1915] rounded-full flex items-center justify-center">
           <img src={conactIcon} alt="contact" />
         </div>

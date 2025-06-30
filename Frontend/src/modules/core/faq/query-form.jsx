@@ -12,7 +12,7 @@ export function QueryForm({
     >
       <div className="space-y-6">
         <h2
-          className="text-[24px] font-bold mb-8 text-center md:text-left"
+          className="text-[24px] font-bold mb-8 text-center lg:text-left"
           style={{ color: headingColor }}
         >
           {heading}

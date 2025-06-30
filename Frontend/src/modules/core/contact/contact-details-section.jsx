@@ -11,7 +11,7 @@ export function ContactDetailsSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="space-y-4">
+            <div className="space-y-4 text-center lg:text-left">
               <div className="flex gap-3">
                 <div>
                   <div className="w-7 h-0.5 bg-[#9B1915]"></div>

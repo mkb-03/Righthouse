@@ -21,7 +21,7 @@ export function FaqSection({
         <div className={`grid gap-12 items-center ${gridClass}`}>
           <div className="space-y-8">
             <div className="space-y-4">
-              <div className="flex gap-3">
+              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div>
                   <div className="w-7 h-0.5 bg-[#9B1915]"></div>
                   <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
@@ -30,7 +30,7 @@ export function FaqSection({
                   FAQ's
                 </span>
               </div>
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-tight text-center lg:text-left">
                 Exceptional craftsmanship for your roof
               </h2>
             </div>
@@ -63,7 +63,7 @@ export function FaqSection({
               ))}
             </div>
 
-            <button className="bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors">
+            <button className="bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors  mx-auto lg:mx-0">
               SEE ALL
               <IoArrowForward className="w-4 h-4" />
             </button>

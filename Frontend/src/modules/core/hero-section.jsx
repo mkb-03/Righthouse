@@ -52,7 +52,7 @@ export function HeroSection() {
                 </button> */}
               </div>
 
-              <div className="text-center md:text-left md:ms-25 flex-1">
+              <div className="text-center lg:text-left md:ms-25 flex-1">
                 <p className="text-sm uppercase">Service Promise</p>
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight mt-2">
                   Your Trusted Roofing <br /> & Home Maintenance Experts

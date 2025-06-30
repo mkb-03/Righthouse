@@ -31,8 +31,8 @@ export function ContactSection() {
           </div>
 
           <div className="space-y-8 lg:mt-0 mt-130">
-            <div className="space-y-4">
-              <div className="flex gap-3">
+            <div className="space-y-4 lg:text-start text-center">
+              <div className="flex gap-3 items-center justify-center lg:justify-start">
                 <div>
                   <div className="w-7 h-0.5 bg-[#9B1915]"></div>
                   <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>

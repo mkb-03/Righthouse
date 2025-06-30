@@ -20,7 +20,7 @@ export function WhyChooseUs() {
         <div className="flex flex-col md:flex-row w-full min-h-[400px] lg:min-h-[600px]">
           <div className="bg-gray-700 text-white flex-1  md:basis-[60%] p-8 lg:p-12 flex flex-col justify-center">
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div>
                   <div className="w-7 h-0.5 bg-white"></div>
                   <div className="w-10 h-0.5 bg-white mt-2"></div>
@@ -29,7 +29,7 @@ export function WhyChooseUs() {
                   WHY CHOOSE US
                 </span>
               </div>
-              <h2 className="text-3xl lg:text-4xl font-bold leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-bold leading-tight text-center lg:text-left">
                 Quality roofing for every Structure.
               </h2>
             </div>

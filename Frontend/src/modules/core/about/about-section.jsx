@@ -8,7 +8,6 @@ export function AboutSection() {
   return (
     <div className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-
         <div className="relative grid grid-cols-2 gap-4">
           <div className="row-span-2">
             <img
@@ -33,12 +32,10 @@ export function AboutSection() {
           </div>
         </div>
 
-
         <div className="space-y-6">
-
-          <div className="space-y-2">
-            <div className="flex items-center gap-3">
-              <div className="flex items-center gap-3">
+          <div className="space-y-2 text-center lg:text-left">
+            <div className="gap-3">
+              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div>
                   <div className="w-7 h-0.5 bg-[#9B1915]"></div>
                   <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
@@ -59,13 +56,8 @@ export function AboutSection() {
             </p>
           </div>
 
-
           <div className="flex items-center gap-4">
-            <img
-              src={award}
-              alt="Badge"
-              className="w-20 h-20"
-            />
+            <img src={award} alt="Badge" className="w-20 h-20" />
             <div>
               <h3 className="text-3xl font-bold text-gray-800">25+</h3>
               <p className="font-semibold text-gray-700 leading-tight">
@@ -79,12 +71,12 @@ export function AboutSection() {
               </p>
             </div>
           </div>
-
-          {/* CTA Button */}
-          <button className="mt-4 inline-flex items-center gap-2 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold transition">
-            BOOK AN APPOINTMENT
-            <FaArrowRight className="w-4 h-4" />
-          </button>
+          <div className="flex flex-col items-center lg:items-start">
+            <button className="mt-4 inline-flex items-center gap-2 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold transition mx-auto lg:mx-0">
+              BOOK AN APPOINTMENT
+              <FaArrowRight className="w-4 h-4" />
+            </button>
+          </div>
         </div>
       </div>
     </div>
