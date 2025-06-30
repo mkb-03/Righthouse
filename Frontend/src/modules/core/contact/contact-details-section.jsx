@@ -12,7 +12,7 @@ export function ContactDetailsSection() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4 text-center lg:text-left">
-              <div className="flex gap-3">
+              <div className="flex gap-3 justify-center lg:justify-start items-center">
                 <div>
                   <div className="w-7 h-0.5 bg-[#9B1915]"></div>
                   <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
