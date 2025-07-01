@@ -7,7 +7,7 @@ import award from "../../../assets/award.svg";
 export function AboutSection() {
   return (
     <div className="py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+      <div className="max-w-6xl w-full mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         <div className="relative grid grid-cols-2 gap-4">
           <div className="row-span-2">
             <img

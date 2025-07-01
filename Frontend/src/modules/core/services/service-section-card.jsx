@@ -12,7 +12,7 @@ export function ServicesSectionCard({ image, icon, title, description }) {
       }}
     >
       <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300" />
-      <div className="relative z-10 w-[350px] h-1/2">
+      <div className="relative z-10  w-[90%] h-1/2">
         <ServiceCard
           title={title}
           icon={<img src={icon} alt={title + " icon"} className="w-100" />}

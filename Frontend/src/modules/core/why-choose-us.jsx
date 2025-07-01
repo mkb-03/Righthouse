@@ -8,7 +8,7 @@ import { Counter } from "./counter";
 export function WhyChooseUs() {
   return (
     <div className="w-full relative my-15 ">
-      <div className="absolute left-1/2 top-7 transform -translate-x-1/2 z-20 w-11/12 max-w-6xl lg:block hidden">
+      <div className="absolute left-1/2 top-7 transform -translate-x-1/2 z-20 max-w-6xl w-full px-6 mx-auto lg:block hidden">
         <Counter />
       </div>
 
@@ -18,7 +18,7 @@ export function WhyChooseUs() {
 
       <div className="relative z-10 pt-24 w-full">
         <div className="flex flex-col md:flex-row w-full min-h-[400px] lg:min-h-[600px]">
-          <div className="bg-gray-700 text-white flex-1  md:basis-[60%] p-8 lg:p-12 flex flex-col justify-center">
+          <div className="bg-gray-700 text-white flex-1 md:basis-[60%] p-8 lg:p-12 flex flex-col justify-center">
             <div className="space-y-4">
               <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div>

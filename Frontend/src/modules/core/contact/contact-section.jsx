@@ -30,7 +30,7 @@ export function ContactSection() {
             </div>
           </div>
 
-          <div className="space-y-8 lg:mt-0 mt-130">
+          <div className="space-y-8 lg:mt-20 mt-130">
             <div className="space-y-4 lg:text-start text-center">
               <div className="flex gap-3 items-center justify-center lg:justify-start">
                 <div>

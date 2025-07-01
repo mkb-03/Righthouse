@@ -11,7 +11,7 @@ export function BookingDetails() {
   }, []);
 
   return (
-    <div className="p-8 lg:p-12 space-y-8 text-center lg:text-left">
+    <div className="p-8 lg:ps-0 lg:pe-6 space-y-8 text-center lg:text-left">
       <div className="space-y-2 ">
         <div className="flex items-center gap-3 justify-center lg:justify-start">
           <div>

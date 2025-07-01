@@ -18,7 +18,7 @@ const navLinks = [
   { href: "/about-us", label: "ABOUT" },
   {
     href: "/service",
-    label: "SERVICES",
+    label: "ROOFING SERVICES",
     dropdown: [
       "Pitched Roofs",
       "Flat Roofs",
@@ -30,8 +30,10 @@ const navLinks = [
       "Guttering",
     ],
   },
-  { href: "/portfolio", label: "Portfolio" },
-  { href: "/faq", label: "FAQ" },
+  // { href: "/home-maintenance", label: "HOME MAINTENANCE" },
+  // { href: "/drone-surveys", label: "DRONE SURVEYS" },
+  // { href: "/gutter", label: "GUTTERS" },
+  { href: "/portfolio", label: "PORTFOLIO" },
   { href: "/contact-us", label: "Contact Us" },
 ];
 
@@ -47,7 +49,7 @@ export function Navbar() {
           <img
             src={logo}
             alt="Righteous Logo"
-            className="w-[60%] min-w-[80px] max-w-[180px]"
+            className="w-[90%] min-w-[80px] max-w-[180px]"
           />
         </div>
         <div className="flex-1 flex flex-col">
@@ -63,12 +65,12 @@ export function Navbar() {
                 <span>needhelp.roofing@gmail.com</span>
               </div>
             </div>
-            <div className="flex items-center gap-3 pe-[70px]">
+            <div className="flex items-center gap-3">
               <FaFacebookF />
               <FaTwitter />
               <FaLinkedinIn />
               <FaInstagram />
-              <button className="ml-4 border border-white text-[#9B1915] bg-white px-3 py-1 rounded hover:bg-gray-200 transition">
+              <button className="ml-4 text-[#9B1915] bg-white px-3 py-1 rounded-[4px] hover:bg-gray-200 transition">
                 GET HELP
               </button>
             </div>
@@ -87,7 +89,7 @@ export function Navbar() {
               )}
             </button>
 
-            <nav className="hidden md:flex items-center justify-center  gap-6 text-sm font-semibold text-[#2f2933] uppercase w-full">
+            <nav className="hidden md:flex items-center justify-center gap-5 text-[13px] font-medium text-[#2f2933] uppercase w-full whitespace-nowrap">
               {navLinks.map((link) => (
                 <div key={link.label} className="relative">
                   {link.dropdown ? (
@@ -144,8 +146,9 @@ export function Navbar() {
             </nav>
 
             <div className="hidden md:flex">
-              <button className="bg-[#9f1313] text-white font-bold px-8 py-2 rounded hover:bg-[#800f0f] flex items-center gap-2 w-[205px]">
-                GET A QUOTE <FaArrowRight />
+              <button className="bg-[#9f1313] text-white rounded-[4px] font-semibold px-8 py-3 ms-3 rounded-[4px] hover:bg-[#800f0f] flex items-center gap-2 w-[160px] uppercase">
+                Call Us
+                 <FaArrowRight />
               </button>
             </div>
 
@@ -222,10 +225,10 @@ export function Navbar() {
                   ))}
                 </nav>
                 <button
-                  className="bg-[#9f1313] text-white font-bold px-8 py-2 rounded hover:bg-[#800f0f] flex items-center gap-2 whitespace-nowrap w-[200px]"
+                  className="bg-[#9f1313] text-white font-bold px-8 py-2 rounded-[4px] hover:bg-[#800f0f] flex items-center gap-[10px] whitespace-nowrap w-[240px] uppercase"
                   onClick={() => setMenuOpen(false)}
                 >
-                  GET A QUOTE <FaArrowRight />
+                  Call Us: 1234567 <FaArrowRight />
                 </button>
               </div>
             </div>

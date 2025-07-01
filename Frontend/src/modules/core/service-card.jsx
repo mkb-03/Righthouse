@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaArrowRight } from "react-icons/fa";
 export function ServiceCard({
   title,
   icon,
@@ -14,7 +14,7 @@ export function ServiceCard({
         transparentBg
           ? isDark
             ? "bg-[#2f2933]/80 text-white border-white"
-            : "bg-[#CDCDCD]/80 text-black border-[#9f1313]"
+            : "bg-[#F3F1F2]/80 text-black border-[#9f1313]"
           : isDark
           ? "bg-[#2f2933] text-white border-white"
           : "bg-white text-black border-[#9f1313]"
@@ -29,7 +29,7 @@ export function ServiceCard({
       </p>
       {showReadMore && (
         <div className="pt-2 text-sm font-semibold text-[#9B1915] flex items-center gap-1 cursor-pointer">
-          READ MORE <span className="text-xs">↗</span>
+          READ MORE <FaArrowRight />
         </div>
       )}
     </div>
