@@ -1,6 +1,7 @@
 import React from "react";
 
-export function BookingForm() {
+export function BookingForm({ inputHeight = "h-12", inputPadding = "p-8" }) {
+  const inputClass = `bg-white text-gray-800 border-0 ${inputHeight} placeholder:text-gray-500 w-full ${inputPadding} rounded-[4px]`;
   return (
     <div className="bg-[#9B1915] p-8 lg:p-12 text-white">
       <div className="space-y-6">
@@ -12,29 +13,29 @@ export function BookingForm() {
           <input
             type="text"
             placeholder="Write your name"
-            className="bg-white text-gray-800 border-0 h-12 placeholder:text-gray-500 w-full p-8 rounded-[4px]"
+            className={inputClass}
           />
 
           <input
             type="email"
             placeholder="Email address"
-            className="bg-white text-gray-800 border-0 h-12 placeholder:text-gray-500 w-full p-8 rounded-[4px]"
+            className={inputClass}
           />
 
           <input
             type="text"
             placeholder="Inspection Date"
-            className="bg-white text-gray-800 border-0 h-12 placeholder:text-gray-500 w-full p-8 rounded-[4px]"
+            className={inputClass}
           />
 
           <input
             type="text"
             placeholder="Your Location"
-            className="bg-white text-gray-800 border-0 h-12 placeholder:text-gray-500 w-full p-8 rounded-[4px]"
+            className={inputClass}
           />
           <textarea
             placeholder="Your Query"
-            className="bg-white text-gray-800 border-0 h-30 placeholder:text-gray-500 w-full p-8 rounded-[4px]"
+            className={`bg-white text-gray-800 border-0 h-30 placeholder:text-gray-500 w-full ${inputPadding} rounded-[4px]`}
           />
 
           <button

@@ -6,7 +6,7 @@ body {
 
 .hero-section-bg {
   position: relative;
-  overflow: hidden; /* Ensures nothing overflows the section */
+  overflow: hidden;
 }
 
 .hero-section-bg::before {
@@ -19,7 +19,7 @@ body {
       rgba(0, 0, 0, 0.85) 29.64%,
       rgba(0, 0, 0, 0.4) 84.51%
     ),
-    url("./assets/heroSectionBg.jpg");
+    var(--hero-bg, url("./assets/heroSectionBg.jpg"));
   background-size: cover;
   background-position: center;
   will-change: transform;

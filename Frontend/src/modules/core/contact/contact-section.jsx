@@ -4,16 +4,17 @@ import location from "../../../assets/location.svg";
 import email from "../../../assets/email.svg";
 import qualityRoof from "../../../assets/contact-roof-repair.svg";
 import contactIcon from "../../../assets/contact-icon.svg";
+import map from "../../../assets/map.png";
 
 export function ContactSection() {
   return (
-    <div className="py- my-4 bg-gray-50">
-      <div className="mx-auto px-2">
+    <div className="my-10 bg-gray-50">
+      <div className="mx-auto px-3">
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="relative">
             <div className="overflow-hidden shadow-lg h-full min-h-[550px]">
               <img
-                src="/placeholder.svg?height=500&width=800"
+                src={map}
                 alt="Map"
                 className="w-100px h-full object-cover"
               />
@@ -53,7 +54,7 @@ export function ContactSection() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <ContactInfoCard
+              <ContactInfoCard
                 icon={
                   <img
                     src={contactIcon}
@@ -66,11 +67,7 @@ export function ContactSection() {
               />
               <ContactInfoCard
                 icon={
-                  <img
-                    src={email}
-                    alt="Email"
-                    className="w-8 h-8 text-white"
-                  />
+                  <img src={email} alt="Email" className="w-8 h-8 text-white" />
                 }
                 title="Email Us"
                 content="info@example.com"

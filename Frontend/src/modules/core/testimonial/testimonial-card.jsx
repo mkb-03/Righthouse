@@ -11,7 +11,7 @@ export function TestimonialCard({ testimonial }) {
     );
 
   return (
-    <div className="bg-white rounded-lg p-6 shadow-sm relative">
+    <div className="bg-[#F3F1F2] rounded-lg p-6 shadow-sm relative">
       <div className="absolute top-0 left-0">
         <div
           className="bg-[#9B1915] px-4 py-2 flex items-center gap-1 rounded-tl-lg"

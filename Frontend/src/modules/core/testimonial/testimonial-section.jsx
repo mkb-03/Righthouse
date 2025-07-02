@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
@@ -71,10 +71,12 @@ const testimonials = [
 ];
 
 export function TestimonialsSection() {
+  const [swiperReady, setSwiperReady] = useState(false);
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
   useEffect(() => {
+    setSwiperReady(true);
     const timeout = setTimeout(() => {
       prevRef.current?.classList.remove("swiper-button-disabled");
       nextRef.current?.classList.remove("swiper-button-disabled");
@@ -100,7 +102,7 @@ export function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="relative">
+        <div className="relative mx-2">
           <Swiper
             modules={[Autoplay, Navigation]}
             spaceBetween={24}
