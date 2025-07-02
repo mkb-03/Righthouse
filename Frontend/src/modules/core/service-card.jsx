@@ -1,5 +1,6 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export function ServiceCard({
   title,
   icon,
@@ -7,6 +8,7 @@ export function ServiceCard({
   isDark = false,
   showReadMore = false,
   transparentBg = false,
+  slug,
 }) {
   return (
     <div
@@ -36,7 +38,15 @@ export function ServiceCard({
       >
         {description}
       </p>
-      {showReadMore && (
+      {showReadMore && slug && (
+        <Link
+          to={`/service/${slug}`}
+          className="pt-2 text-sm font-semibold text-[#9B1915] flex items-center gap-1 cursor-pointer group-hover:text-white"
+        >
+          READ MORE <FaArrowRight />
+        </Link>
+      )}
+      {showReadMore && !slug && (
         <div className="pt-2 text-sm font-semibold text-[#9B1915] flex items-center gap-1 cursor-pointer group-hover:text-white">
           READ MORE <FaArrowRight />
         </div>

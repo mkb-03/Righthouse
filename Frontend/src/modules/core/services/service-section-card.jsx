@@ -1,7 +1,8 @@
 import React from "react";
 import { ServiceCard } from "../service-card";
+import { Link } from "react-router-dom";
 
-export function ServicesSectionCard({ image, icon, title, description }) {
+export function ServicesSectionCard({ image, icon, title, description, slug }) {
   return (
     <div
       className="relative group h-64 flex items-end justify-center"
@@ -19,6 +20,7 @@ export function ServicesSectionCard({ image, icon, title, description }) {
           description={description}
           showReadMore={true}
           transparentBg={true}
+          slug={slug}
         />
       </div>
     </div>

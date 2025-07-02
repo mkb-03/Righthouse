@@ -2,6 +2,7 @@ import heroSectionBg from "../../assets/heroSectionBg.jpg";
 import roofRepairIcon from "../../assets/icon-box-3.svg";
 import roofReplacementIcon from "../../assets/roof-replacement.svg";
 import roofInstallationIcon from "../../assets/roof-installation.svg";
+import roofInspectionIcon from "../../assets/roof-inspection.svg";
 
 export const serviceData = {
   "pitched-roofs": {
@@ -535,5 +536,77 @@ export const serviceData = {
         answer: "Signs of properly working gutters include no overflow during rain, proper water flow through downpipes, no standing water, and no damage to fascia or soffits. If you notice overflow, leaks, or water damage, it's time for inspection and repair."
       }
     ]
+  },
+  "home-maintenance": {
+    title: "Home Maintenance",
+    heroImage: heroSectionBg,
+    heroImageAlt: "Home Maintenance Services",
+    mainTitle: "Comprehensive Home Maintenance Solutions",
+    description:
+      "Our home maintenance services are designed to keep your property in top condition year-round. From routine inspections to repairs and upgrades, our experienced team handles everything to ensure your home remains safe, efficient, and beautiful. We offer tailored maintenance plans to fit your needs and budget, giving you peace of mind and protecting your investment.",
+    extraTitle: "Why Choose Our Home Maintenance?",
+    extraDescription:
+      "Regular home maintenance prevents costly repairs, increases property value, and ensures a safe, comfortable living environment. Our team provides proactive solutions and expert care for every aspect of your home.",
+    serviceCards: [
+      {
+        title: "Seasonal Inspections",
+        icon: roofInspectionIcon || roofRepairIcon,
+        description:
+          "Thorough inspections to catch issues early and keep your home running smoothly.",
+        isDark: false,
+      },
+      {
+        title: "Repairs & Upgrades",
+        icon: roofReplacementIcon,
+        description:
+          "From minor fixes to major upgrades, we handle all types of home repairs.",
+        isDark: true,
+      },
+      {
+        title: "Preventive Maintenance",
+        icon: roofInstallationIcon,
+        description:
+          "Scheduled maintenance to extend the life of your home's systems and features.",
+        isDark: false,
+      },
+    ],
+    sidebarServices: [
+      "Pitched Roofs",
+      "Flat Roofs",
+      "Skylights / Velux",
+      "Drone Surveys",
+      "Fascias & Soffits",
+      "Chimneys",
+      "Roof Insulation",
+      "Guttering",
+      "Home Maintenance",
+    ],
+    activeService: "Home Maintenance",
+    faqData: [
+      {
+        id: 1,
+        question: "What does a home maintenance service include?",
+        answer:
+          "Our home maintenance service includes seasonal inspections, minor repairs, system checks (HVAC, plumbing, electrical), gutter cleaning, roof checks, and more. We tailor our services to your home's specific needs.",
+      },
+      {
+        id: 2,
+        question: "How often should I schedule home maintenance?",
+        answer:
+          "We recommend at least two comprehensive maintenance visits per year—spring and fall. Additional visits may be needed for older homes or after severe weather events.",
+      },
+      {
+        id: 3,
+        question: "Can you handle emergency repairs?",
+        answer:
+          "Yes, we offer emergency repair services for urgent issues such as leaks, electrical problems, or storm damage. Contact us anytime for prompt assistance.",
+      },
+      {
+        id: 4,
+        question: "Why is preventive maintenance important?",
+        answer:
+          "Preventive maintenance helps avoid costly repairs, extends the lifespan of your home's systems, and ensures your property remains safe and comfortable. It also helps maintain or increase your home's value.",
+      },
+    ],
   },
 };

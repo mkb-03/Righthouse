@@ -14,6 +14,7 @@ import roofInstallationIcon from "../../../assets/roof-installation.svg";
 import flatRoofingIcon from "../../../assets/flat-roofing.svg";
 import chimneyRepairIcon from "../../../assets/chimney-repairs.svg";
 import roofInspectionIcon from "../../../assets/roof-inspection.svg";
+import { useNavigate } from "react-router-dom";
 
 export const services = [
   {
@@ -22,6 +23,7 @@ export const services = [
     title: "Pitched Roofs",
     description:
       "Expert repair and installation services for pitched roofs of all types.",
+    slug: "pitched-roofs",
   },
   {
     image: roofReplacement,
@@ -29,6 +31,7 @@ export const services = [
     title: "Skylights / Velux",
     description:
       "Professional installation and repair of skylights and Velux windows.",
+    slug: "skylights-velux",
   },
   {
     image: flatRoofing,
@@ -36,6 +39,7 @@ export const services = [
     title: "Flat Roofs",
     description:
       "Durable and energy-efficient solutions for all flat roofing needs.",
+    slug: "flat-roofs",
   },
   {
     image: roofInstallation,
@@ -43,6 +47,7 @@ export const services = [
     title: "Fascias & Soffits",
     description:
       "Enhance and protect your roofline with quality fascias and soffits.",
+    slug: "fascias-soffits",
   },
   {
     image: roofInspection,
@@ -50,6 +55,7 @@ export const services = [
     title: "Drone Surveys",
     description:
       "Advanced drone inspections to assess roof condition safely and accurately.",
+    slug: "drone-surveys",
   },
   {
     image: chimneyRepair,
@@ -57,10 +63,12 @@ export const services = [
     title: "Chimneys",
     description:
       "Comprehensive chimney repair, maintenance, and rebuild services.",
+    slug: "chimneys",
   },
 ];
 
 export function ServicesSection() {
+  const navigate = useNavigate();
   return (
     <section className="py-16">
       <div className="max-w-6xl w-full mx-auto px-6">
@@ -84,7 +92,10 @@ export function ServicesSection() {
           ))}
         </div>
         <div className="flex justify-center mt-35">
-          <button className="btn-zoom bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
+          <button 
+            className="btn-zoom bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition"
+            onClick={() => navigate('/service')}
+          >
             <span className="btn-zoom-content">
               VIEW ALL SERVICES <FaArrowRight />
             </span>

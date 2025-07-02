@@ -8,6 +8,7 @@ import {
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 import { BookAppointment } from "./book-appointment";
 import logo from "../../assets/logo-color.png";
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -35,25 +36,25 @@ export function Footer() {
                 <div className="flex gap-3">
                   <a
                     href="#"
-                    className="w-10 h-10 bg-[#9B1915] rounded-full flex items-center justify-center text-white hover:bg-red-800 transition-colors"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-[#9B1915] transition-colors"
                   >
                     <FaFacebookF className="w-4 h-4" />
                   </a>
                   <a
                     href="#"
-                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-[#9B1915] transition-colors"
                   >
                     <FaTwitter className="w-4 h-4" />
                   </a>
                   <a
                     href="#"
-                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-[#9B1915] transition-colors"
                   >
                     <FaLinkedinIn className="w-4 h-4" />
                   </a>
                   <a
                     href="#"
-                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-gray-800 transition-colors"
+                    className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-[#9B1915] transition-colors"
                   >
                     <FaInstagram className="w-4 h-4" />
                   </a>
@@ -66,40 +67,40 @@ export function Footer() {
                 </h4>
                 <ul className="space-y-3">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/"
                       className="text-gray-600 hover:text-red-700 transition-colors flex items-center gap-2"
                     >
                       <span className="text-red-700">›</span>
                       Home
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/about-us"
                       className="text-gray-600 hover:text-red-700 transition-colors flex items-center gap-2"
                     >
                       <span className="text-red-700">›</span>
                       About Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/service"
                       className="text-gray-600 hover:text-red-700 transition-colors flex items-center gap-2"
                     >
                       <span className="text-red-700">›</span>
                       Services
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/contact-us"
                       className="text-gray-600 hover:text-red-700 transition-colors flex items-center gap-2"
                     >
                       <span className="text-red-700">›</span>
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -110,40 +111,40 @@ export function Footer() {
                 </h4>
                 <ul className="space-y-3">
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/service/pitched-roofs"
                       className="text-gray-600 hover:text-red-700 transition-colors flex items-center gap-2"
                     >
                       <span className="text-red-700">›</span>
-                      Roof Repair
-                    </a>
+                      Pitched Roofs
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/service/flat-roofs"
                       className="text-gray-600 hover:text-red-700 transition-colors flex items-center gap-2"
                     >
                       <span className="text-red-700">›</span>
-                      Roof Replacement
-                    </a>
+                      Flat Roofs
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/service/skylights-velux"
                       className="text-gray-600 hover:text-red-700 transition-colors flex items-center gap-2"
                     >
                       <span className="text-red-700">›</span>
-                      New Roof Installation
-                    </a>
+                      Skylights / Velux
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link
+                      to="/service/drone-surveys"
                       className="text-gray-600 hover:text-red-700 transition-colors flex items-center gap-2"
                     >
                       <span className="text-red-700">›</span>
-                      Flat Roofing
-                    </a>
+                      Drone Surveys
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -184,13 +185,19 @@ export function Footer() {
             </button>
 
             <div className="flex items-center gap-4 text-sm">
-              <a href="#" className="hover:text-gray-200 transition-colors">
+              <Link
+                to="/privacy-policy"
+                className="hover:text-gray-200 transition-colors"
+              >
                 Privacy Policy
-              </a>
+              </Link>
               <span>|</span>
-              <a href="#" className="hover:text-gray-200 transition-colors">
+              <Link
+                to="/terms"
+                className="hover:text-gray-200 transition-colors"
+              >
                 Terms & Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </div>

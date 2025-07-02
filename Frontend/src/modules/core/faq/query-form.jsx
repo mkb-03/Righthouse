@@ -44,7 +44,7 @@ export function QueryForm({
 
           <button
             type="submit"
-            className="btn-zoom w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-5 px-6 rounded"
+            className="btn-zoom w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-5 px-6 rounded justify-center"
           >
             <span className="btn-zoom-content">SEND MESSAGE</span>
           </button>

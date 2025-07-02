@@ -95,7 +95,7 @@ export function HeroSection() {
                         {/* Dynamic Heading */}
                         {headings[activeIndex].link ? (
                           <h1
-                            className="text-6xl md:text-5xl font-bold leading-tight mt-2 cursor-pointer"
+                            className="text-4xl md:text-5xl font-bold leading-tight mt-2 cursor-pointer"
                             onClick={() => navigate(headings[activeIndex].link)}
                           >
                             {headings[activeIndex].label}
@@ -105,7 +105,10 @@ export function HeroSection() {
                             {headings[activeIndex].label}
                           </h1>
                         )}
-                        <button className="btn-zoom group mt-6 px-6 py-3 bg-[#9f1313] text-white font-semibold rounded flex items-center gap-2 mx-auto lg:mx-0">
+                        <button
+                          className="cursor-pointer btn-zoom group mt-6 px-6 py-3 bg-[#9f1313] text-white font-semibold rounded flex items-center gap-2 mx-auto lg:mx-0"
+                          onClick={() => navigate("/contact-us")}
+                        >
                           <span className="btn-zoom-content">
                             CONTACT US <FaArrowRight />
                           </span>

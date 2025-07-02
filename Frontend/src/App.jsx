@@ -10,10 +10,12 @@ import { Contact } from "./modules/pages/contact-us";
 import { Service } from "./modules/pages/service";
 import { SingleService } from "./modules/pages/single-service";
 import { DynamicService } from "./modules/pages/dynamic-service";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

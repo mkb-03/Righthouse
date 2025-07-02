@@ -11,12 +11,14 @@ import {
   FaTimes,
   FaChevronDown,
 } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
 
 import logo from "../../assets/white-logo.svg";
 
 export function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [roofingOpen, setRoofingOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="w-full shadow relative z-50">
@@ -56,7 +58,9 @@ export function Navbar() {
               <FaTwitter className="cursor-pointer" />
               <FaLinkedinIn className="cursor-pointer" />
               <FaInstagram className="cursor-pointer" />
-              <button className="ml-4 bg-white text-[#9B1915] px-3 py-1 rounded text-sm font-semibold">
+              <button className="ml-4 bg-white text-[#9B1915] px-3 py-1 rounded text-sm font-semibold"
+                onClick={() => navigate('/contact-us')}
+              >
                 GET HELP
               </button>
             </div>
@@ -65,49 +69,58 @@ export function Navbar() {
           {/* Bottom Row: Nav + Call Button */}
           <div className="bg-white px-4 py-3 flex items-center justify-center">
             <ul className="flex flex-wrap gap-6 text-sm font-semibold text-[#2a232c]">
-              <li className="hover:text-[#9B1915] cursor-pointer">HOME</li>
-              <li className="hover:text-[#9B1915] cursor-pointer">ABOUT</li>
+              <li className="hover:text-[#9B1915] cursor-pointer">
+                <Link to="/">HOME</Link>
+              </li>
+              <li className="hover:text-[#9B1915] cursor-pointer">
+                <Link to="/about-us">ABOUT</Link>
+              </li>
               <li className="relative group">
                 <span className="cursor-pointer hover:text-[#9B1915] flex items-center gap-x-1">
-                  ROOFING SERVICES <FaChevronDown className="text-xs" />
+                  <Link to="/service">ROOFING SERVICES</Link>{" "}
+                  <FaChevronDown className="text-xs" />
                 </span>
                 <ul className="absolute left-0 top-3 mt-1 hidden group-hover:block bg-white shadow-md rounded text-sm py-2 z-50 min-w-[200px]">
                   <li className="px-4 py-2 hover:bg-gray-100 hover:text-[#9B1915] cursor-pointer">
-                    Pitched Roofs
+                    <Link to="/service/pitched-roofs">Pitched Roofs</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 hover:text-[#9B1915] cursor-pointer">
-                    Flat Roofs
+                    <Link to="/service/flat-roofs">Flat Roofs</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 hover:text-[#9B1915] cursor-pointer">
-                    Skylights / Velux
+                    <Link to="/service/skylights-velux">Skylights / Velux</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 hover:text-[#9B1915] cursor-pointer">
-                    Drone Surveys
+                    <Link to="/service/drone-surveys">Drone Surveys</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 hover:text-[#9B1915] cursor-pointer">
-                    Fascias & Soffits
+                    <Link to="/service/fascias-soffits">Fascias & Soffits</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 hover:text-[#9B1915] cursor-pointer">
-                    Chimneys
+                    <Link to="/service/chimneys">Chimneys</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 hover:text-[#9B1915] cursor-pointer">
-                    Roof Insulation
+                    <Link to="/service/roof-insulation">Roof Insulation</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-100 hover:text-[#9B1915] cursor-pointer">
-                    Guttering
+                    <Link to="/service/guttering">Guttering</Link>
                   </li>
                 </ul>
               </li>
               <li className="hover:text-[#9B1915] cursor-pointer">
-                HOME MAINTENANCE
+                <Link to="/service/home-maintenance">HOME MAINTENANCE</Link>
               </li>
               <li className="hover:text-[#9B1915] cursor-pointer">
-                DRONE SURVEYS
+                <Link to="/service/drone-surveys">DRONE SURVEYS</Link>
               </li>
-              <li className="hover:text-[#9B1915] cursor-pointer">GUTTERS</li>
-              <li className="hover:text-[#9B1915] cursor-pointer">PORTFOLIO</li>
               <li className="hover:text-[#9B1915] cursor-pointer">
-                CONTACT US
+                <Link to="/service/guttering">GUTTERS</Link>
+              </li>
+              <li className="hover:text-[#9B1915] cursor-pointer">
+                <Link to="/portfolio">PORTFOLIO</Link>
+              </li>
+              <li className="hover:text-[#9B1915] cursor-pointer">
+                <Link to="/contact-us">CONTACT US</Link>
               </li>
             </ul>
             <button className="bg-[#9B1915] text-white px-5 py-2 ms-5 rounded flex items-center gap-2 font-semibold">
@@ -129,8 +142,12 @@ export function Navbar() {
           </button>
 
           <ul className="flex flex-col gap-6 text-lg font-semibold text-[#2a232c] w-full max-w-sm ">
-            <li className="text-[#9B1915] cursor-pointer">HOME</li>
-            <li className="cursor-pointer hover:text-[#9B1915]">ABOUT</li>
+            <li className="text-[#9B1915] cursor-pointer">
+              <Link to="/">HOME</Link>
+            </li>
+            <li className="cursor-pointer hover:text-[#9B1915]">
+              <Link to="/about-us">ABOUT</Link>
+            </li>
 
             {/* Collapsible Dropdown */}
             <li className="cursor-pointer">
@@ -147,27 +164,49 @@ export function Navbar() {
               </div>
               {roofingOpen && (
                 <ul className="mt-2 pl-4 text-base flex flex-col gap-2 text-center font-normal">
-                  <li className="hover:text-[#9B1915]">Pitched Roofs</li>
-                  <li className="hover:text-[#9B1915]">Flat Roofs</li>
-                  <li className="hover:text-[#9B1915]">Skylights / Velux</li>
-                  <li className="hover:text-[#9B1915]">Drone Surveys</li>
-                  <li className="hover:text-[#9B1915]">Fascias & Soffits</li>
-                  <li className="hover:text-[#9B1915]">Chimneys</li>
-                  <li className="hover:text-[#9B1915]">Roof Insulation</li>
-                  <li className="hover:text-[#9B1915]">Guttering</li>
+                  <li className="hover:text-[#9B1915]">
+                    <Link to="/service/pitched-roofs">Pitched Roofs</Link>
+                  </li>
+                  <li className="hover:text-[#9B1915]">
+                    <Link to="/service/flat-roofs">Flat Roofs</Link>
+                  </li>
+                  <li className="hover:text-[#9B1915]">
+                    <Link to="/service/skylights-velux">Skylights / Velux</Link>
+                  </li>
+                  <li className="hover:text-[#9B1915]">
+                    <Link to="/service/drone-surveys">Drone Surveys</Link>
+                  </li>
+                  <li className="hover:text-[#9B1915]">
+                    <Link to="/service/fascias-soffits">Fascias & Soffits</Link>
+                  </li>
+                  <li className="hover:text-[#9B1915]">
+                    <Link to="/service/chimneys">Chimneys</Link>
+                  </li>
+                  <li className="hover:text-[#9B1915]">
+                    <Link to="/service/roof-insulation">Roof Insulation</Link>
+                  </li>
+                  <li className="hover:text-[#9B1915]">
+                    <Link to="/service/guttering">Guttering</Link>
+                  </li>
                 </ul>
               )}
             </li>
 
             <li className="cursor-pointer hover:text-[#9B1915]">
-              HOME MAINTENANCE
+              <Link to="/service/home-maintenance">HOME MAINTENANCE</Link>
             </li>
             <li className="cursor-pointer hover:text-[#9B1915]">
-              DRONE SURVEYS
+              <Link to="/service/drone-surveys">DRONE SURVEYS</Link>
             </li>
-            <li className="cursor-pointer hover:text-[#9B1915]">GUTTERS</li>
-            <li className="cursor-pointer hover:text-[#9B1915]">PORTFOLIO</li>
-            <li className="cursor-pointer hover:text-[#9B1915]">CONTACT US</li>
+            <li className="cursor-pointer hover:text-[#9B1915]">
+              <Link to="/service/guttering">GUTTERS</Link>
+            </li>
+            <li className="cursor-pointer hover:text-[#9B1915]">
+              <Link to="/portfolio">PORTFOLIO</Link>
+            </li>
+            <li className="cursor-pointer hover:text-[#9B1915]">
+              <Link to="/contact-us">CONTACT US</Link>
+            </li>
 
             <li>
               <button className="mt-4 bg-[#9B1915] text-white px-5 py-2 rounded flex items-center mx-auto gap-2 font-semibold">

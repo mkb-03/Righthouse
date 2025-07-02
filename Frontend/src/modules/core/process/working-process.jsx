@@ -5,6 +5,7 @@ import iconInspection from "../../../assets/inspection.svg";
 import iconQuotation from "../../../assets/quotation.svg";
 import iconService from "../../../assets/services.svg";
 import iconFollowUp from "../../../assets/follow-up.svg";
+import { useNavigate } from "react-router-dom";
 
 const steps = [
   {
@@ -35,6 +36,7 @@ const steps = [
 ];
 
 export function WorkingProcess() {
+  const navigate = useNavigate();
   return (
     <section className="py-20 bg-process-section">
       <div className="max-w-6xl w-full mx-auto text-center">
@@ -56,9 +58,12 @@ export function WorkingProcess() {
           ))}
         </div>
         <div className="mt-10 flex justify-center">
-          <button className="btn-zoom bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
-          <span className="btn-zoom-content">
-            BOOK NOW    <FaArrowRight />
+          <button 
+            className="btn-zoom bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition"
+            onClick={() => navigate('/contact-us')}
+          >
+            <span className="btn-zoom-content">
+              BOOK NOW    <FaArrowRight />
             </span>
           </button>
         </div>

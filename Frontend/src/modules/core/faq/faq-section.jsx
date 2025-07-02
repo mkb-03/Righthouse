@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { IoEye, IoArrowForward } from "react-icons/io5";
 import { QueryForm } from "./query-form";
+import { useNavigate } from "react-router-dom";
 
 export function FaqSection({
   faqData = [],
@@ -10,6 +11,7 @@ export function FaqSection({
   gridClass = "lg:grid-cols-2",
 }) {
   const [openFaq, setOpenFaq] = useState(faqData[0]?.id || null);
+  const navigate = useNavigate();
 
   const toggleFaq = (id) => {
     setOpenFaq(openFaq === id ? null : id);
@@ -63,7 +65,10 @@ export function FaqSection({
               ))}
             </div>
 
-            <button className="btn-zoom bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors  mx-auto lg:mx-0">
+            <button
+              className="btn-zoom bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors  mx-auto lg:mx-0"
+              onClick={() => navigate("/faq")}
+            >
               <span className="btn-zoom-content">
                 SEE ALL
                 <IoArrowForward className="w-4 h-4" />

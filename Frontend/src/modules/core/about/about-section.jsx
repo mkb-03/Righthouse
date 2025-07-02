@@ -3,8 +3,10 @@ import roofRepair from "../../../assets/roof-repair.jpg";
 import roofReplacement from "../../../assets/roof-replacement.jpg";
 import flatRoofing from "../../../assets/flat-roofing.jpg";
 import award from "../../../assets/award.svg";
+import { useNavigate } from "react-router-dom";
 
 export function AboutSection() {
+  const navigate = useNavigate();
   return (
     <div className="py-16 bg-white">
       <div className="max-w-6xl w-full mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
@@ -72,7 +74,10 @@ export function AboutSection() {
             </div>
           </div>
           <div className="flex flex-col items-center lg:items-start">
-            <button className="btn-zoom mt-4 inline-flex items-center gap-2 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold transition mx-auto lg:mx-0">
+            <button 
+              className="btn-zoom mt-4 inline-flex items-center gap-2 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold transition mx-auto lg:mx-0"
+              onClick={() => navigate('/contact-us')}
+            >
               <span className="btn-zoom-content">
                 BOOK AN APPOINTMENT
                 <FaArrowRight className="w-4 h-4" />

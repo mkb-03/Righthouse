@@ -12,7 +12,7 @@ export function ContactSection() {
       <div className="mx-auto px-3">
         <div className="grid lg:grid-cols-2 gap-8">
           <div className="relative">
-            <div className="overflow-hidden shadow-lg h-full min-h-[550px]">
+            <div className="overflow-hidden shadow-lg h-full lg:min-h-[550px]">
               <img
                 src={map}
                 alt="Map"
@@ -31,7 +31,7 @@ export function ContactSection() {
             </div>
           </div>
 
-          <div className="space-y-8 lg:mt-20 mt-130">
+          <div className="space-y-8 lg:mt-20 mt-[50rem]">
             <div className="space-y-4 lg:text-start text-center">
               <div className="flex gap-3 items-center justify-center lg:justify-start">
                 <div>
