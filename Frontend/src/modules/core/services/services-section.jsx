@@ -84,8 +84,10 @@ export function ServicesSection() {
           ))}
         </div>
         <div className="flex justify-center mt-35">
-          <button className="bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
-            VIEW ALL SERVICES  <FaArrowRight />
+          <button className="btn-zoom bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
+            <span className="btn-zoom-content">
+              VIEW ALL SERVICES <FaArrowRight />
+            </span>
           </button>
         </div>
       </div>

@@ -32,16 +32,16 @@ export function BookingForm() {
             placeholder="Your Location"
             className="bg-white text-gray-800 border-0 h-12 placeholder:text-gray-500 w-full p-8 rounded-[4px]"
           />
-            <textarea
+          <textarea
             placeholder="Your Query"
             className="bg-white text-gray-800 border-0 h-30 placeholder:text-gray-500 w-full p-8 rounded-[4px]"
           />
 
           <button
             type="submit"
-            className="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-4 px-6 rounded-[4px]"
+            className="btn-zoom w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-4 px-6 rounded-[4px]"
           >
-            Book Now
+            <span className="btn-zoom-content">Book Now</span>
           </button>
         </form>
       </div>

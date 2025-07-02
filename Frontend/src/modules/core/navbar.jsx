@@ -70,8 +70,8 @@ export function Navbar() {
               <FaTwitter />
               <FaLinkedinIn />
               <FaInstagram />
-              <button className="ml-4 text-[#9B1915] bg-white px-3 py-1 rounded-[4px] hover:bg-gray-200 transition">
-                GET HELP
+              <button className="btn-zoom ml-4 text-[#9B1915] bg-white px-3 py-1 rounded-[4px] hover:bg-gray-200 transition">
+                <span className="btn-zoom-content">GET HELP</span>
               </button>
             </div>
           </div>
@@ -148,7 +148,7 @@ export function Navbar() {
             <div className="hidden md:flex">
               <button className="bg-[#9f1313] text-white rounded-[4px] font-semibold px-8 py-3 ms-3 rounded-[4px] hover:bg-[#800f0f] flex items-center gap-2 w-[160px] uppercase">
                 Call Us
-                 <FaArrowRight />
+                <FaArrowRight />
               </button>
             </div>
 

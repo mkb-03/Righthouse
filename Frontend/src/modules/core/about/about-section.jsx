@@ -72,9 +72,11 @@ export function AboutSection() {
             </div>
           </div>
           <div className="flex flex-col items-center lg:items-start">
-            <button className="mt-4 inline-flex items-center gap-2 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold transition mx-auto lg:mx-0">
-              BOOK AN APPOINTMENT
-              <FaArrowRight className="w-4 h-4" />
+            <button className="btn-zoom mt-4 inline-flex items-center gap-2 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold transition mx-auto lg:mx-0">
+              <span className="btn-zoom-content">
+                BOOK AN APPOINTMENT
+                <FaArrowRight className="w-4 h-4" />
+              </span>
             </button>
           </div>
         </div>

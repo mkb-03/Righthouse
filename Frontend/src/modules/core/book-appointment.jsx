@@ -11,9 +11,11 @@ export function BookAppointment() {
             Let's book your Appointment with Us now
           </h3>
         </div>
-        <button className="bg-white text-red-700 hover:bg-gray-100 px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors whitespace-nowrap">
-          BOOK NOW
-          <FaArrowRight />
+        <button className="btn-zoom bg-white text-red-700 hover:bg-gray-100 px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors whitespace-nowrap">
+          <span className="btn-zoom-content">
+            BOOK NOW
+            <FaArrowRight />
+          </span>
         </button>
       </div>
     </div>

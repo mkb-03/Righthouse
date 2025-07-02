@@ -161,8 +161,8 @@ export function Footer() {
                     placeholder="Email Address"
                     className="bg-[#9B1915] flex-1 px-4 py-3 placeholder-white border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-red-700 focus:border-transparent"
                   />
-                  <button className="bg-white hover:bg-red-800 text-[#9B1915] px-4 py-3 rounded-r-md transition-colors">
-                    <FaPaperPlane className="w-4 h-4" />
+                  <button className="bg-white hover:bg-red-800 hover:text-white text-[#9B1915] px-4 py-3 rounded-r-md transition-colors">
+                    <FaPaperPlane className="w-4 h-4 " />
                   </button>
                 </div>
               </div>
@@ -176,9 +176,11 @@ export function Footer() {
 
             <button
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              className="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors"
+              className="btn-zoom w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-colors"
             >
-              <MdOutlineKeyboardDoubleArrowUp className="w-6 h-6 text-[#9B1915]" />
+              <span className="btn-zoom-content">
+                <MdOutlineKeyboardDoubleArrowUp className="w-6 h-6 text-[#9B1915]" />
+              </span>
             </button>
 
             <div className="flex items-center gap-4 text-sm">

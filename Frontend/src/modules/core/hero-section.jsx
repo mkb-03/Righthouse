@@ -44,11 +44,15 @@ export function HeroSection() {
           <div className="max-w-6xl w-full mx-auto px-6">
             <div className="flex flex-col md:flex-col lg:flex-row items-center justify-center lg:justify-between gap-6 h-full w-full text-center">
               <div className="lg:flex flex-col gap-3 hidden">
-                <button className="w-10 h-10 rounded-full bg-[#9f1313] flex items-center justify-center text-white">
+                <button className="btn-zoom w-10 h-10 rounded-full bg-[#9f1313] flex items-center justify-center text-white">
+                <span className="btn-zoom-content">
                   <FaArrowRight />
+                  </span>
                 </button>
-                <button className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#9f1313]">
+                <button className="btn-zoom w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#9f1313]">
+                <span className="btn-zoom-content">
                   <FaArrowLeft />
+                  </span>
                 </button>
               </div>
 
@@ -57,17 +61,23 @@ export function HeroSection() {
                 <h1 className="text-4xl md:text-5xl font-bold leading-tight mt-2">
                   Your Trusted Roofing <br /> & Home Maintenance Experts
                 </h1>
-                <button className="mt-6 px-6 py-3 bg-[#9f1313] text-white font-semibold rounded flex items-center gap-2 mx-auto lg:mx-0">
-                  CONTACT US <FaArrowRight />
+                <button className="btn-zoom group mt-6 px-6 py-3 bg-[#9f1313] text-white font-semibold rounded flex items-center gap-2 mx-auto lg:mx-0">
+                  <span className="btn-zoom-content">
+                    CONTACT US <FaArrowRight />
+                  </span>
                 </button>
               </div>
 
               <div className="lg:hidden flex flex-row justify-center items-center gap-3 mt-10">
-                <button className="w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#9f1313]">
+                <button className="btn-zoom w-10 h-10 rounded-full bg-white flex items-center justify-center text-[#9f1313]">
+                <span className="btn-zoom-content">
                   <FaArrowLeft />
+                  </span>
                 </button>
-                <button className="w-10 h-10 rounded-full bg-[#9f1313] flex items-center justify-center text-white">
+                <button className="btn-zoom w-10 h-10 rounded-full bg-[#9f1313] flex items-center justify-center text-white">
+                <span className="btn-zoom-content">
                   <FaArrowRight />
+                  </span>
                 </button>
               </div>
 

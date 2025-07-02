@@ -63,9 +63,11 @@ export function FaqSection({
               ))}
             </div>
 
-            <button className="bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors  mx-auto lg:mx-0">
-              SEE ALL
-              <IoArrowForward className="w-4 h-4" />
+            <button className="btn-zoom bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition-colors  mx-auto lg:mx-0">
+              <span className="btn-zoom-content">
+                SEE ALL
+                <IoArrowForward className="w-4 h-4" />
+              </span>
             </button>
           </div>
 

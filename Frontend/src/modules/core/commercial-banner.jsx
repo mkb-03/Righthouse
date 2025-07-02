@@ -18,9 +18,11 @@ export function CommercialBanner() {
           <h1 className="text-3xl md:text-5xl font-bold max-w-3xl leading-snug">
             Commercial roofing solutions for your business
           </h1>
-          <button className="mt-6 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition">
-            Get a Quotation
-            <FaArrowRight className="w-4 h-4" />
+          <button className="btn-zoom mt-6 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold flex items-center gap-2 transition">
+            <span className="btn-zoom-content">
+              Get a Quotation
+              <FaArrowRight className="w-4 h-4" />
+            </span>
           </button>
         </div>
       </div>

@@ -106,7 +106,7 @@ export function TestimonialsSection() {
             spaceBetween={24}
             slidesPerView={3}
             loop={testimonials.length > 3}
-            autoplay={{ delay: 1000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             navigation={{
               prevEl: prevRef.current,
               nextEl: nextRef.current,
@@ -130,15 +130,19 @@ export function TestimonialsSection() {
 
           <button
             ref={prevRef}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 w-12 h-12 bg-[#9B1915] rounded-full shadow-lg flex items-center justify-center hover:bg-red-800 transition-colors"
+            className="btn-zoom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-6 z-10 w-12 h-12 bg-[#9B1915] rounded-full shadow-lg flex items-center justify-center hover:bg-red-800 transition-colors"
           >
-            <IoChevronBack className="w-5 h-5 text-white" />
+            <span className="btn-zoom-content">
+              <IoChevronBack className="w-5 h-5 text-white" />
+            </span>
           </button>
           <button
             ref={nextRef}
-            className="absolute right-0 top-1/2 translate-x-6 -translate-y-1/2 z-10 w-12 h-12 bg-[#9B1915] rounded-full shadow-lg flex items-center justify-center hover:bg-red-800 transition-colors"
+            className="btn-zoom absolute right-0 top-1/2 translate-x-6 -translate-y-1/2 z-10 w-12 h-12 bg-[#9B1915] rounded-full shadow-lg flex items-center justify-center hover:bg-red-800 transition-colors"
           >
-            <IoChevronForward className="w-5 h-5 text-white" />
+            <span className="btn-zoom-content">
+              <IoChevronForward className="w-5 h-5 text-white" />
+            </span>
           </button>
         </div>
       </div>

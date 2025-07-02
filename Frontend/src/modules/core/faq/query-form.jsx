@@ -3,7 +3,7 @@ import React from "react";
 export function QueryForm({
   heading = "Book Roof solutions",
   bgColor = "#9B1915",
-  headingColor
+  headingColor,
 }) {
   return (
     <div
@@ -44,9 +44,9 @@ export function QueryForm({
 
           <button
             type="submit"
-            className="w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-5 px-6 rounded"
+            className="btn-zoom w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-5 px-6 rounded"
           >
-            SEND MESSAGE
+            <span className="btn-zoom-content">SEND MESSAGE</span>
           </button>
         </form>
       </div>

@@ -5,6 +5,7 @@ import { portfolioItems } from "./portfolio-data";
 import { filterCategories } from "./filter-categories";
 import { PortfolioCard } from "./portfolio-card";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
+import { FaArrowRight } from "react-icons/fa";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -38,12 +39,10 @@ export function PortfolioSection({ title, subtitle, buttonText }) {
               <div className="w-10 h-0.5 bg-[#9B1915] mt-2"></div>
             </div>
             <span className="text-[#9B1915] font-medium text-sm tracking-wide uppercase">
-            
               {title}
             </span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-[#2f2933] mt-5">
-       
             {subtitle}
           </h2>
           <div className="flex flex-wrap justify-center gap-2 mb-8 mt-10">
@@ -51,13 +50,13 @@ export function PortfolioSection({ title, subtitle, buttonText }) {
               <button
                 key={category.id}
                 onClick={() => setActiveFilter(category.id)}
-                className={`cursor-pointer px-4 py-2 rounded-md text-sm font-medium transition-colors ${
+                className={`btn-zoom cursor-pointer px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                   activeFilter === category.id
                     ? "bg-[#9B1915] text-white"
                     : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                 }`}
               >
-                {category.label}
+                <span className="btn-zoom-content">{category.label}</span>
               </button>
             ))}
           </div>
@@ -93,23 +92,31 @@ export function PortfolioSection({ title, subtitle, buttonText }) {
 
           <button
             ref={prevRef}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
+            className="btn-zoom absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-gray-50 transition-colors"
           >
-            <IoChevronBack className="w-5 h-5 text-gray-600" />
+            <span className="btn-zoom-content">
+              <IoChevronBack className="w-5 h-5 text-gray-600" />
+            </span>
           </button>
           <button
             ref={nextRef}
-            className="absolute right-0 top-1/2 translate-x-4 -translate-y-1/2 z-10 w-12 h-12 bg-[#9B1915] rounded-full shadow-lg flex items-center justify-center hover:bg-red-800 transition-colors"
+            className="btn-zoom absolute right-0 top-1/2 translate-x-4 -translate-y-1/2 z-10 w-12 h-12 bg-[#9B1915] rounded-full shadow-lg flex items-center justify-center hover:bg-red-800 transition-colors"
           >
-            <IoChevronForward className="w-5 h-5 text-white" />
+            <span className="btn-zoom-content">
+              <IoChevronForward className="w-5 h-5 text-white" />
+            </span>
           </button>
         </div>
 
-       {buttonText && <div className="mt-10 flex justify-center">
-          <button className="bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
-            {buttonText} <span className="text-xs">↗</span>
-          </button>
-        </div>}
+        {buttonText && (
+          <div className="mt-10 flex justify-center">
+            <button className="btn-zoom bg-[#9B1915] text-white px-6 py-3 rounded font-semibold flex items-center gap-2 hover:bg-[#950e0e] transition">
+              <span className="btn-zoom-content">
+                {buttonText} <FaArrowRight />
+              </span>
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );
