@@ -40,9 +40,9 @@ export function BookingForm({ inputHeight = "h-12", inputPadding = "p-8" }) {
 
           <button
             type="submit"
-            className="btn-zoom w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-4 px-6 rounded-[4px]"
+            className="btn-zoom w-full bg-gray-800 hover:bg-gray-700 text-white font-bold py-4 px-6 rounded-[4px] flex justify-center items-center"
           >
-            <span className="btn-zoom-content">Book Now</span>
+            <span className="btn-zoom-content ">Book Now</span>
           </button>
         </form>
       </div>

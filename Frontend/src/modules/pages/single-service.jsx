@@ -69,20 +69,20 @@ export function SingleService({
       <div className="bg-[#F8F8F8] min-h-screen py-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 px-4">
           {/* Main Content */}
-          <div className="lg:col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-8 ">
             <img
               src={serviceData.heroImage}
               alt={serviceData.heroImageAlt}
               className="w-full h-80 object-cover rounded-lg"
             />
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mt-6 text-center lg:text-left">
               {serviceData.mainTitle}
             </h1>
-            <p className="text-gray-600">{serviceData.description}</p>
-            <h2 className="text-2xl font-bold text-gray-800 mt-8">
+            <p className="text-gray-600 text-center lg:text-left">{serviceData.description}</p>
+            <h2 className="text-2xl font-bold text-gray-800 mt-8 text-center lg:text-left">
               {serviceData.extraTitle}
             </h2>
-            <p className="text-gray-600 mb-6">{serviceData.extraDescription}</p>
+            <p className="text-gray-600 mb-6 text-center lg:text-left">{serviceData.extraDescription}</p>
             <div className="grid md:grid-cols-3 gap-6">
               {serviceData.serviceCards.map((card, index) => (
                 <ServiceCard

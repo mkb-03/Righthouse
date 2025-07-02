@@ -14,7 +14,7 @@ import {
 
 import logo from "../../assets/white-logo.svg";
 
-export function Navbar() {
+export function Navbar2() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [roofingOpen, setRoofingOpen] = useState(false);
 

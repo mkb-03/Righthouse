@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./modules/core/navbar";
+// import { Navbar2 } from "./modules/core/navbar-2";
 import { Home } from "./modules/pages/Home.jsx";
 import { Portfolio } from "./modules/pages/portfolio";
 import { AboutUs } from "./modules/pages/about-us.jsx";
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <Navbar />
+      {/* <Navbar2 /> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
