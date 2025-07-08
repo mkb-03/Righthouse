@@ -63,14 +63,14 @@ export function ContactSection() {
                   />
                 }
                 title="Call Us"
-                content="+123 (456) 789-0118"
+                content="07883227785"
               />
               <ContactInfoCard
                 icon={
                   <img src={email} alt="Email" className="w-8 h-8 text-white" />
                 }
                 title="Email Us"
-                content="info@example.com"
+                content="info@righteous.com"
               />
               <ContactInfoCard
                 icon={

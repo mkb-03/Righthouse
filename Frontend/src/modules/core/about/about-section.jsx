@@ -51,10 +51,7 @@ export function AboutSection() {
               Roofing is our heritage, <br /> Quality is our tradition
             </h2>
             <p className="text-gray-600">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco. Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
+              With over 20 years in the roofing and property maintenance industry, Righteous Roofing Ltd has grown through dedication, integrity, and craftsmanship. Our fully accredited team is trained to industry standards, delivering tailored, long-lasting solutions for domestic and commercial clients. Licensed, insured, and health-and-safety-compliant, we take pride in every roof laid and every property maintained.
             </p>
           </div>
 
@@ -74,7 +71,7 @@ export function AboutSection() {
             </div>
           </div>
           <div className="flex flex-col items-center lg:items-start">
-            <button 
+            <button
               className="btn-zoom mt-4 inline-flex items-center gap-2 bg-[#9B1915] hover:bg-red-800 text-white px-6 py-3 rounded-md font-semibold transition mx-auto lg:mx-0"
               onClick={() => navigate('/contact-us')}
             >

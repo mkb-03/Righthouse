@@ -3,9 +3,9 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import iconBox1 from "../../assets/icon-box-1.svg";
 import iconBox2 from "../../assets/icon-box-2.svg";
 import iconBox3 from "../../assets/icon-box-3.svg";
-import chimneyRepair from "../../assets/chimney-repair.jpg";
-import flatRoofing from "../../assets/flat-roofing.jpg";
-import heroSectionBG from "../../assets/heroSectionBg.jpg";
+import chimneyRepair from "../../assets/home-slider1.jpg";
+import flatRoofing from "../../assets/home-slider2.jpg";
+import heroSectionBG from "../../assets/home-slider3.jpg";
 import { ServiceCard } from "./service-card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -49,9 +49,14 @@ export function HeroSection() {
 
   const images = [chimneyRepair, flatRoofing, heroSectionBG];
   const headings = [
-    { label: "London Roofing Specialist", link: null },
-    { label: "Drone Surveys", link: "/service/drone-surveys" },
-    { label: "Skylights / Velux", link: "/service/skylights-velux" },
+    { label: "Trusted Roofing Experts Across the UK", link: null },
+    { label: "Protect Your Home with a Weatherproof Roof", link: "/service/drone-surveys" },
+    { label: "Cutting-Edge Drone Roof Inspections", link: "/service/skylights-velux" },
+  ];
+  const subHeadings = [
+    { label: "From minor repairs to full roof replacements — quality craftsmanship you can rely on."},
+    { label: "Built to withstand the British weather — durable, secure, and guaranteed."},
+    { label: "Accurate, safe, and hassle-free roof assessments — no ladders needed."}
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -103,6 +108,19 @@ export function HeroSection() {
                         ) : (
                           <h1 className="text-4xl md:text-5xl font-bold leading-tight mt-2 cursor-pointer">
                             {headings[activeIndex].label}
+                          </h1>
+                        )}
+                          {/* Dynamic Sub-Heading */}
+                        {subHeadings[activeIndex].link ? (
+                          <h1
+                            className="text-2xl md:text-3xl font-bold leading-tight mt-2 cursor-pointer"
+                            onClick={() => navigate(headings[activeIndex].link)}
+                          >
+                            {subHeadings[activeIndex].label}
+                          </h1>
+                        ) : (
+                          <h1 className="text-2xl md:text-3xl font-bold leading-tight mt-2 cursor-pointer">
+                            {subHeadings[activeIndex].label}
                           </h1>
                         )}
                         <button

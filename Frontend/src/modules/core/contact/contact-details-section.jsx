@@ -42,7 +42,7 @@ export function ContactDetailsSection() {
                   />
                 }
                 title="Call Us"
-                content="+123 (456) 789-0118"
+                content="07883227785"
               />
               <ContactInfoCard
                 icon={
