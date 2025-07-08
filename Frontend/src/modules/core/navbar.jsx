@@ -58,8 +58,9 @@ export function Navbar() {
               <FaTwitter className="cursor-pointer" />
               <FaLinkedinIn className="cursor-pointer" />
               <FaInstagram className="cursor-pointer" />
-              <button className="ml-4 bg-white text-[#9B1915] px-3 py-1 rounded text-sm font-semibold"
-                onClick={() => navigate('/contact-us')}
+              <button
+                className="ml-4 bg-white text-[#9B1915] px-3 py-1 rounded text-sm font-semibold"
+                onClick={() => navigate("/contact-us")}
               >
                 GET HELP
               </button>
@@ -68,7 +69,7 @@ export function Navbar() {
 
           {/* Bottom Row: Nav + Call Button */}
           <div className="bg-white px-4 py-3 flex items-center justify-center">
-            <ul className="flex flex-wrap gap-6 text-sm font-semibold text-[#2a232c]">
+            <ul className="flex flex-wrap lg:flex-nowrap gap-4 xl:gap-6 text-sm font-semibold text-[#2a232c]">
               <li className="hover:text-[#9B1915] cursor-pointer">
                 <Link to="/">HOME</Link>
               </li>
@@ -76,7 +77,7 @@ export function Navbar() {
                 <Link to="/about-us">ABOUT</Link>
               </li>
               <li className="relative group">
-                <span className="cursor-pointer hover:text-[#9B1915] flex items-center gap-x-1">
+                <span className="cursor-pointer hover:text-[#9B1915] flex items-center justify-center xl:gap-x-1">
                   <Link to="/service">ROOFING SERVICES</Link>{" "}
                   <FaChevronDown className="text-xs" />
                 </span>
@@ -143,10 +144,14 @@ export function Navbar() {
 
           <ul className="flex flex-col gap-6 text-lg font-semibold text-[#2a232c] w-full max-w-sm ">
             <li className="text-[#9B1915] cursor-pointer">
-              <Link to="/">HOME</Link>
+              <Link to="/" onClick={() => setMenuOpen(false)}>
+                HOME
+              </Link>
             </li>
             <li className="cursor-pointer hover:text-[#9B1915]">
-              <Link to="/about-us">ABOUT</Link>
+              <Link to="/about-us" onClick={() => setMenuOpen(false)}>
+                ABOUT
+              </Link>
             </li>
 
             {/* Collapsible Dropdown */}
@@ -165,47 +170,103 @@ export function Navbar() {
               {roofingOpen && (
                 <ul className="mt-2 pl-4 text-base flex flex-col gap-2 text-center font-normal">
                   <li className="hover:text-[#9B1915]">
-                    <Link to="/service/pitched-roofs">Pitched Roofs</Link>
+                    <Link
+                      to="/service/pitched-roofs"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Pitched Roofs
+                    </Link>
                   </li>
                   <li className="hover:text-[#9B1915]">
-                    <Link to="/service/flat-roofs">Flat Roofs</Link>
+                    <Link
+                      to="/service/flat-roofs"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Flat Roofs
+                    </Link>
                   </li>
                   <li className="hover:text-[#9B1915]">
-                    <Link to="/service/skylights-velux">Skylights / Velux</Link>
+                    <Link
+                      to="/service/skylights-velux"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Skylights / Velux
+                    </Link>
                   </li>
                   <li className="hover:text-[#9B1915]">
-                    <Link to="/service/drone-surveys">Drone Surveys</Link>
+                    <Link
+                      to="/service/drone-surveys"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Drone Surveys
+                    </Link>
                   </li>
                   <li className="hover:text-[#9B1915]">
-                    <Link to="/service/fascias-soffits">Fascias & Soffits</Link>
+                    <Link
+                      to="/service/fascias-soffits"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Fascias & Soffits
+                    </Link>
                   </li>
                   <li className="hover:text-[#9B1915]">
-                    <Link to="/service/chimneys">Chimneys</Link>
+                    <Link
+                      to="/service/chimneys"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Chimneys
+                    </Link>
                   </li>
                   <li className="hover:text-[#9B1915]">
-                    <Link to="/service/roof-insulation">Roof Insulation</Link>
+                    <Link
+                      to="/service/roof-insulation"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Roof Insulation
+                    </Link>
                   </li>
                   <li className="hover:text-[#9B1915]">
-                    <Link to="/service/guttering">Guttering</Link>
+                    <Link
+                      to="/service/guttering"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Guttering
+                    </Link>
                   </li>
                 </ul>
               )}
             </li>
 
             <li className="cursor-pointer hover:text-[#9B1915]">
-              <Link to="/service/home-maintenance">HOME MAINTENANCE</Link>
+              <Link
+                to="/service/home-maintenance"
+                onClick={() => setMenuOpen(false)}
+              >
+                HOME MAINTENANCE
+              </Link>
             </li>
             <li className="cursor-pointer hover:text-[#9B1915]">
-              <Link to="/service/drone-surveys">DRONE SURVEYS</Link>
+              <Link
+                to="/service/drone-surveys"
+                onClick={() => setMenuOpen(false)}
+              >
+                DRONE SURVEYS
+              </Link>
             </li>
             <li className="cursor-pointer hover:text-[#9B1915]">
-              <Link to="/service/guttering">GUTTERS</Link>
+              <Link to="/service/guttering" onClick={() => setMenuOpen(false)}>
+                GUTTERS
+              </Link>
             </li>
             <li className="cursor-pointer hover:text-[#9B1915]">
-              <Link to="/portfolio">PORTFOLIO</Link>
+              <Link to="/portfolio" onClick={() => setMenuOpen(false)}>
+                PORTFOLIO
+              </Link>
             </li>
             <li className="cursor-pointer hover:text-[#9B1915]">
-              <Link to="/contact-us">CONTACT US</Link>
+              <Link to="/contact-us" onClick={() => setMenuOpen(false)}>
+                CONTACT US
+              </Link>
             </li>
 
             <li>
