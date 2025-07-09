@@ -43,13 +43,12 @@ export function ContactSection() {
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-bold text-gray-800 leading-tight">
-                Quality roofing for every Structure.
+                Get in Touch with Righteous Roofing Ltd
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip.
+
+                Have a roofing issue or need a quote? Our friendly team is ready to help with expert advice and fast, reliable service.
+
               </p>
             </div>
 
@@ -63,14 +62,14 @@ export function ContactSection() {
                   />
                 }
                 title="Call Us"
-                content="07883227785"
+                content="01785 318 881"
               />
               <ContactInfoCard
                 icon={
                   <img src={email} alt="Email" className="w-8 h-8 text-white" />
                 }
                 title="Email Us"
-                content="info@righteous.com"
+                content="info@righteousroofingltd.co.uk"
               />
               <ContactInfoCard
                 icon={

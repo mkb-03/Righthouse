@@ -22,7 +22,7 @@ export function Home() {
 
       <PortfolioSection
         title="Portfolio"
-        subtitle="We're proud of the Same works"
+        subtitle="Our Featured Projects"
       />
       <WorkingProcess />
       <TestimonialsSection />

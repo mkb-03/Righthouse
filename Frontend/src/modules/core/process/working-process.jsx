@@ -11,27 +11,27 @@ const steps = [
   {
     step: "01",
     icon: iconInspection,
-    title: "Inspection",
-    description: "Curabitur nullad sit amet tempus convallis",
+    title: "Consultation",
+    description: "Discuss your requirements with us for the best solution.",
   },
   {
     step: "02",
     icon: iconQuotation,
     title: "Quotation",
-    description: "Curabitur nullad sit amet tempus convallis",
+    description: "Get a clear and customized quote tailored to your needs.",
     active: true,
   },
   {
     step: "03",
     icon: iconService,
     title: "Service",
-    description: "Curabitur nullad sit amet tempus convallis",
+    description: "Our team delivers high-quality, professional service on time.",
   },
   {
     step: "04",
     icon: iconFollowUp,
     title: "Follow-Up",
-    description: "Curabitur nullad sit amet tempus convallis",
+    description: "We ensure your satisfaction with timely follow-up and support.",
   },
 ];
 

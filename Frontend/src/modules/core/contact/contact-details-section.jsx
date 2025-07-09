@@ -42,7 +42,7 @@ export function ContactDetailsSection() {
                   />
                 }
                 title="Call Us"
-                content="07883227785"
+                content="01785 318 881"
               />
               <ContactInfoCard
                 icon={
@@ -53,7 +53,7 @@ export function ContactDetailsSection() {
                   />
                 }
                 title="Email Us"
-                content="info@example.com"
+                content="info@righteousroofingltd.co.uk"
               />
               <ContactInfoCard
                 icon={

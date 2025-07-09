@@ -46,11 +46,11 @@ export function Navbar() {
             <div className="flex gap-6">
               <div className="flex items-center gap-2">
                 <FaPhoneAlt />
-                <span>+111 (564) 568 25</span>
+                <span>01785 318 881</span>
               </div>
               <div className="flex items-center gap-2">
                 <FaEnvelope />
-                <span>needhelp.roofing@gmail.com</span>
+                <span>info@righteousroofingltd.co.uk</span>
               </div>
             </div>
             <div className="flex items-center gap-4">
@@ -125,7 +125,7 @@ export function Navbar() {
               </li>
             </ul>
             <button className="bg-[#9B1915] text-white px-5 py-2 ms-5 rounded flex items-center gap-2 font-semibold">
-              CALL US: 1234567 <FaArrowRight />
+              CALL US: 01785 318 881<FaArrowRight />
             </button>
           </div>
         </div>

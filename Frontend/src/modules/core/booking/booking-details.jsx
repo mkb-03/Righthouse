@@ -30,10 +30,7 @@ export function BookingDetails() {
         </h1>
 
         <p className="text-gray-600 leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit
-          amet, consectetur adipiscing elit.
+          At Righteous Roofing Ltd, we deliver professional, reliable, and affordable roofing solutions for homes and businesses across the West Midlands. Our team of skilled roofers specializes in everything from minor repairs to complete roof replacements, ensuring durable results that withstand the test of time.
         </p>
       </div>
 
@@ -97,7 +94,7 @@ export function BookingDetails() {
         </div>
         <div>
           <p className="text-gray-600 text-sm mb-1">Any time Call Us</p>
-          <p className="text-gray-800 font-bold text-lg">+111 (564) 568 25</p>
+          <p className="text-gray-800 font-bold text-lg">01785 318 881</p>
         </div>
       </div>
     </div>

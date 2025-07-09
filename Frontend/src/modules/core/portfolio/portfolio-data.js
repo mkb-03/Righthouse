@@ -4,20 +4,29 @@ import roofInstallation from "../../../assets/roof-installation.jpg";
 import roofInspection from "../../../assets/roof-inspection.jpg";
 import flatRoofing from "../../../assets/flat-roofing.jpg";
 import chimneyRepair from "../../../assets/chimney-repair.jpg";
+import roofing1 from "../../../assets/roofing1.jpeg";
+import roofing2 from "../../../assets/roofing2.jpeg";
+import roofing3 from "../../../assets/roofing3.jpeg";
+import insulation1 from "../../../assets/insulation1.jpeg";
+import insulation2 from "../../../assets/insulation2.jpeg";
+import insulation3 from "../../../assets/insulation3.jpeg";
+import chimney1 from "../../../assets/chimney1.jpeg";
+import chimney2 from "../../../assets/chimney2.jpeg";
+import chimney3 from "../../../assets/chimney3.jpeg";
 
 export const portfolioItems = [
   // Roofing
   {
     id: 1,
     category: "roofing",
-    image: roofRepair,
+    image: roofing1,
     title: "Gutter Installation",
     type: "image",
   },
   {
     id: 2,
     category: "roofing",
-    image: roofReplacement,
+    image: roofing2,
     title: "Roof Repair Services",
     subtitle: "REPAIR SERVICES",
     type: "service",
@@ -25,7 +34,7 @@ export const portfolioItems = [
   {
     id: 3,
     category: "roofing",
-    image: roofInstallation,
+    image: roofing3,
     title: "Tile Roofing",
     type: "image",
   },
@@ -34,14 +43,14 @@ export const portfolioItems = [
   {
     id: 4,
     category: "property",
-    image: flatRoofing,
+    image: roofing1,
     title: "General Repairs",
     type: "image",
   },
   {
     id: 5,
     category: "property",
-    image: chimneyRepair,
+    image: chimney1,
     title: "Masonry Fix",
     subtitle: "BRICK WORK",
     type: "service",
@@ -49,7 +58,7 @@ export const portfolioItems = [
   {
     id: 6,
     category: "property",
-    image: roofInspection,
+    image: insulation1,
     title: "Paint & Wall",
     type: "image",
   },
@@ -58,14 +67,14 @@ export const portfolioItems = [
   {
     id: 7,
     category: "loft",
-    image: roofInstallation,
+    image: insulation1,
     title: "Loft Blanket",
     type: "image",
   },
   {
     id: 8,
     category: "loft",
-    image: roofRepair,
+    image: insulation2,
     title: "Attic Repair",
     subtitle: "LOFT CARE",
     type: "service",
@@ -73,7 +82,7 @@ export const portfolioItems = [
   {
     id: 9,
     category: "loft",
-    image: roofReplacement,
+    image: insulation3,
     title: "Ceiling Tiles",
     type: "image",
   },

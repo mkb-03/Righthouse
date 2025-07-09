@@ -15,7 +15,7 @@ export function Portfolio() {
       <PageHeader title="Portfolio" />
       <PortfolioSection
         title="Portfolio"
-        subtitle="We're proud of the Same works"
+        subtitle="Our Featured Projects"
         buttonText="LOAD MORE"
       />
       <WorkingProcess />
