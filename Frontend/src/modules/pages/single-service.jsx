@@ -5,8 +5,8 @@ import { ServiceCard } from "../core/service-card";
 import roofRepairIcon from "../../assets/icon-box-3.svg";
 import roofReplacementIcon from "../../assets/roof-replacement.svg";
 import roofInstallationIcon from "../../assets/roof-installation.svg";
-import heroSectionBg from "../../assets/heroSectionBg.jpg";
-import manWorking from "../../assets/manWorking.jpg";
+import heroSectionBg from "../../assets/heroSectionBg.webp";
+import manWorking from "../../assets/manWorking.webp";
 import { PageHeader } from "../core/page-header";
 
 export function SingleService({
@@ -146,9 +146,9 @@ export function SingleService({
                     <span className="font-bold">Need Consultation</span>
                   </div>
                   <div className="font-bold text-lg text-center">
-                    +111 (564) 568 25
+                    07883 227 785
                   </div>
-                  <div className="text-sm text-center">info@example.com</div>
+                  <div className="text-sm text-center">info@righteousroofingltd.co.uk</div>
                 </div>
               </div>
               <div className="w-full mt-4">

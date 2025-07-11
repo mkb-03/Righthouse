@@ -8,8 +8,8 @@ import { AboutSection } from "../core/about/about-section";
 import { CoreValuesSection } from "../core/core-value-section";
 import { CommercialBanner } from "../core/commercial-banner";
 import { faqData } from "../core/faq/faqData";
-import flatRoofing from "../../assets/flat-roofing.jpg";
-import faq1 from "../../assets/faq-1.jpg";
+import flatRoofing from "../../assets/flat-roofing.webp";
+import faq1 from "../../assets/faq-1.webp";
 
 export function AboutUs() {
   return (

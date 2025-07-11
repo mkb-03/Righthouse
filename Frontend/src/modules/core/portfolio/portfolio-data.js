@@ -1,18 +1,18 @@
-import roofRepair from "../../../assets/roof-repair.jpg";
-import roofReplacement from "../../../assets/roof-replacement.jpg";
-import roofInstallation from "../../../assets/roof-installation.jpg";
-import roofInspection from "../../../assets/roof-inspection.jpg";
-import flatRoofing from "../../../assets/flat-roofing.jpg";
-import chimneyRepair from "../../../assets/chimney-repair.jpg";
-import roofing1 from "../../../assets/roofing1.jpeg";
-import roofing2 from "../../../assets/roofing2.jpeg";
-import roofing3 from "../../../assets/roofing3.jpeg";
-import insulation1 from "../../../assets/insulation1.jpeg";
-import insulation2 from "../../../assets/insulation2.jpeg";
-import insulation3 from "../../../assets/insulation3.jpeg";
-import chimney1 from "../../../assets/chimney1.jpeg";
-import chimney2 from "../../../assets/chimney2.jpeg";
-import chimney3 from "../../../assets/chimney3.jpeg";
+import roofRepair from "../../../assets/roof-repair.webp";
+import roofReplacement from "../../../assets/roof-replacement.webp";
+import roofInstallation from "../../../assets/roof-installation.webp";
+import roofInspection from "../../../assets/roof-inspection.webp";
+import flatRoofing from "../../../assets/flat-roofing.webp";
+import chimneyRepair from "../../../assets/chimney-repair.webp";
+import roofing1 from "../../../assets/roofing1.webp";
+import roofing2 from "../../../assets/roofing2.webp";
+import roofing3 from "../../../assets/roofing3.webp";
+import insulation1 from "../../../assets/insulation1.webp";
+import insulation2 from "../../../assets/insulation2.webp";
+import insulation3 from "../../../assets/insulation3.webp";
+import chimney1 from "../../../assets/chimney1.webp";
+import chimney2 from "../../../assets/chimney2.webp";
+import chimney3 from "../../../assets/chimney3.webp";
 
 export const portfolioItems = [
   // Roofing

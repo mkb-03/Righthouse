@@ -1,12 +1,12 @@
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { ServicesSectionCard } from "./service-section-card";
-import roofRepair from "../../../assets/roof-repair.jpg";
-import roofReplacement from "../../../assets/roof-replacement.jpg";
-import roofInstallation from "../../../assets/roof-installation.jpg";
-import roofInspection from "../../../assets/roof-inspection.jpg";
-import flatRoofing from "../../../assets/flat-roofing.jpg";
-import chimneyRepair from "../../../assets/chimney-repair.jpg";
+import roofRepair from "../../../assets/roof-repair.webp";
+import roofReplacement from "../../../assets/roof-replacement.webp";
+import roofInstallation from "../../../assets/roof-installation.webp";
+import roofInspection from "../../../assets/roof-inspection.webp";
+import flatRoofing from "../../../assets/flat-roofing.webp";
+import chimneyRepair from "../../../assets/chimney-repair.webp";
 
 import roofRepairIcon from "../../../assets/icon-box-3.svg";
 import roofReplacementIcon from "../../../assets/roof-replacement.svg";

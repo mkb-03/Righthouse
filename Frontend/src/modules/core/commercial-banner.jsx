@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-import roofReplacement from "../../assets/roof-replacement.jpg";
+import roofReplacement from "../../assets/roof-replacement.webp";
 export function CommercialBanner() {
   const navigate = useNavigate();
   return (

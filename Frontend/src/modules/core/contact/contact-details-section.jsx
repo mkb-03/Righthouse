@@ -25,10 +25,7 @@ export function ContactDetailsSection() {
                 Quality roofing for every Structure.
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip.
+                We are committed to delivering exceptional roofing services that combine craftsmanship, safety, and customer satisfaction. Whether you're dealing with a leaking roof, weather damage, or planning a new build, we work closely with you to deliver outstanding results—on time and within budget.
               </p>
             </div>
 
@@ -38,7 +35,7 @@ export function ContactDetailsSection() {
                   <img
                     src={contactIcon}
                     alt="contactIcon"
-                    className="w-8 h-8 text-white"
+                    className="w-5 h-8 text-white"
                   />
                 }
                 title="Call Us"
@@ -49,7 +46,7 @@ export function ContactDetailsSection() {
                   <img
                     src={email}
                     alt="Email"
-                    className="w-8 h-8 text-white"
+                    className="w-5 h-8 text-white"
                   />
                 }
                 title="Email Us"
@@ -60,7 +57,7 @@ export function ContactDetailsSection() {
                   <img
                     src={location}
                     alt="Location"
-                    className="w-8 h-8 text-white"
+                    className="w-5 h-8 text-white"
                   />
                 }
                 title="Address"
@@ -71,7 +68,7 @@ export function ContactDetailsSection() {
                   <img
                     src={qualityRoof}
                     alt="Quality Roof"
-                    className="w-8 h-8 text-white"
+                    className="w-5 h-8 text-white"
                   />
                 }
                 title="Quality Roof"

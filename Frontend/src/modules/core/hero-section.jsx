@@ -3,9 +3,9 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import iconBox1 from "../../assets/icon-box-1.svg";
 import iconBox2 from "../../assets/icon-box-2.svg";
 import iconBox3 from "../../assets/icon-box-3.svg";
-import chimneyRepair from "../../assets/home-slider1.jpg";
-import flatRoofing from "../../assets/home-slider2.jpg";
-import heroSectionBG from "../../assets/home-slider3.jpg";
+import chimneyRepair from "../../assets/home-slider1.webp";
+import flatRoofing from "../../assets/home-slider2.webp";
+import heroSectionBG from "../../assets/home-slider3.webp";
 import { ServiceCard } from "./service-card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
@@ -54,9 +54,9 @@ export function HeroSection() {
     { label: "Cutting-Edge Drone Roof Inspections", link: "/service/skylights-velux" },
   ];
   const subHeadings = [
-    { label: "From minor repairs to full roof replacements — quality craftsmanship you can rely on."},
-    { label: "Built to withstand the British weather — durable, secure, and guaranteed."},
-    { label: "Accurate, safe, and hassle-free roof assessments — no ladders needed."}
+    { label: "From minor repairs to full roof replacements — quality craftsmanship you can rely on." },
+    { label: "Built to withstand the British weather — durable, secure, and guaranteed." },
+    { label: "Accurate, safe, and hassle-free roof assessments — no ladders needed." }
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
@@ -97,32 +97,36 @@ export function HeroSection() {
                         </SlidePrevButton>
                       </div>
                       <div className="text-center lg:text-left ps-0 lg:ps-10 flex-1 mx-auto">
-                        {/* Dynamic Heading */}
-                        {headings[activeIndex].link ? (
-                          <h1
-                            className="text-4xl md:text-5xl font-bold leading-tight mt-2 cursor-pointer"
-                            onClick={() => navigate(headings[activeIndex].link)}
-                          >
-                            {headings[activeIndex].label}
-                          </h1>
-                        ) : (
-                          <h1 className="text-4xl md:text-5xl font-bold leading-tight mt-2 cursor-pointer">
-                            {headings[activeIndex].label}
-                          </h1>
-                        )}
+                        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl inline-block">
+                          {/* Dynamic Heading */}
+                          {headings[activeIndex].link ? (
+                            <h1
+                              className="text-4xl md:text-5xl font-bold leading-tight mt-2 cursor-pointer"
+                              // onClick={() => navigate(headings[activeIndex].link)}
+                            >
+                              {headings[activeIndex].label}
+                            </h1>
+                          ) : (
+                            <h1 className="text-4xl md:text-5xl font-bold leading-tight mt-2 cursor-pointer">
+                              {headings[activeIndex].label}
+                            </h1>
+                          )}
+                        </div>
+                        <div className="bg-white/10 backdrop-blur-sm p-6 rounded-xl mt-4 inline-block">
                           {/* Dynamic Sub-Heading */}
-                        {subHeadings[activeIndex].link ? (
-                          <h1
-                            className="text-2xl md:text-3xl font-bold leading-tight mt-2 cursor-pointer"
-                            onClick={() => navigate(headings[activeIndex].link)}
-                          >
-                            {subHeadings[activeIndex].label}
-                          </h1>
-                        ) : (
-                          <h1 className="text-2xl md:text-3xl font-bold leading-tight mt-2 cursor-pointer">
-                            {subHeadings[activeIndex].label}
-                          </h1>
-                        )}
+                          {subHeadings[activeIndex].link ? (
+                            <h1
+                              className="text-2xl md:text-3xl font-bold leading-tight mt-2 cursor-pointer"
+                              // onClick={() => navigate(headings[activeIndex].link)}
+                            >
+                              {subHeadings[activeIndex].label}
+                            </h1>
+                          ) : (
+                            <h1 className="text-2xl md:text-3xl font-bold leading-tight mt-2 cursor-pointer">
+                              {subHeadings[activeIndex].label}
+                            </h1>
+                          )}
+                        </div>
                         <button
                           className="cursor-pointer btn-zoom group mt-6 px-6 py-3 bg-[#9f1313] text-white font-semibold rounded flex items-center gap-2 mx-auto lg:mx-0"
                           onClick={() => navigate("/contact-us")}
@@ -148,6 +152,7 @@ export function HeroSection() {
                       <div className="hidden md:flex items-center justify-center"></div>
                     </div>
                   </div>
+
                 </div>
               </section>
             </SwiperSlide>

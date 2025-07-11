@@ -1,4 +1,4 @@
-import heroSectionBg from "../../assets/heroSectionBg.jpg";
+import heroSectionBg from "../../assets/heroSectionBg.webp";
 import roofRepairIcon from "../../assets/icon-box-3.svg";
 import roofReplacementIcon from "../../assets/roof-replacement.svg";
 import roofInstallationIcon from "../../assets/roof-installation.svg";

@@ -19,7 +19,7 @@ body {
       rgba(0, 0, 0, 0.85) 29.64%,
       rgba(0, 0, 0, 0.4) 84.51%
     ),
-    var(--hero-bg, url("./assets/heroSectionBg.jpg"));
+    var(--hero-bg, url("./assets/heroSectionBg.webp"));
   background-size: cover;
   background-position: center;
   will-change: transform;
@@ -37,14 +37,14 @@ body {
 
 .bg-process-section {
   background-image: linear-gradient(0deg, #ebebebe3, #ebebebe3),
-    url("./assets/roof-repair.jpg");
+    url("./assets/roof-repair.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .bg-about-section {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./assets/roof-repair.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("./assets/roof-repair.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

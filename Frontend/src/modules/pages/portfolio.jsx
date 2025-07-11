@@ -6,8 +6,8 @@ import { ContactSection } from "../core/contact/contact-section";
 import { PageHeader } from "../core/page-header";
 import { PortfolioSection } from "../core/portfolio/portfolio-section";
 import { faqData } from "../core/faq/faqData";
-import flatRoofing from "../../assets/flat-roofing.jpg";
-import faq1 from "../../assets/faq-1.jpg";
+import flatRoofing from "../../assets/flat-roofing.webp";
+import faq1 from "../../assets/faq-1.webp";
 
 export function Portfolio() {
   return (

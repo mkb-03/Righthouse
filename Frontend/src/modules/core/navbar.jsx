@@ -24,9 +24,13 @@ export function Navbar() {
     <div className="w-full shadow relative z-50">
       {/* Mobile Header: Logo + Hamburger */}
       <div className="flex items-center justify-between px-4 py-4 bg-[#9B1915] lg:hidden">
-        <div className="w-[160px]">
-          <img src={logo} alt="logo" className="h-10 object-contain" />
-        </div>
+        <Link to="/">
+          <div className="w-[160px]">
+
+            <img src={logo} alt="logo" className="h-10 object-contain" />
+
+          </div>
+        </Link>
         <button onClick={() => setMenuOpen(true)} aria-label="Open menu">
           <FaBars className="w-6 h-6 text-white" />
         </button>
@@ -35,9 +39,11 @@ export function Navbar() {
       {/* Desktop Layout */}
       <div className="hidden lg:flex">
         {/* Left Column: Logo */}
-        <div className="bg-[#9B1915] text-white flex items-center justify-center px-6 py-6 w-[200px]">
-          <img src={logo} alt="logo" />
-        </div>
+        <Link to="/">
+          <div className="bg-[#9B1915] text-white flex items-center justify-center px-6 py-6 w-[200px]">
+            <img src={logo} alt="logo" />
+          </div>
+        </Link>
 
         {/* Right Column */}
         <div className="flex-1 flex flex-col">
@@ -45,19 +51,34 @@ export function Navbar() {
           <div className="bg-[#2a232c] text-white text-sm px-4 py-2 flex justify-between items-center">
             <div className="flex gap-6">
               <div className="flex items-center gap-2">
-                <FaPhoneAlt />
-                <span>01785 318 881</span>
+                <Link to="/contact-us">
+                  <FaPhoneAlt />
+                  </Link>
+                  <span>01785 318 881</span>
               </div>
               <div className="flex items-center gap-2">
+                <Link to="/contact-us">
                 <FaEnvelope />
+                </Link>
                 <span>info@righteousroofingltd.co.uk</span>
               </div>
             </div>
             <div className="flex items-center gap-4">
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+
               <FaFacebookF className="cursor-pointer" />
+              </a>
+              <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+
               <FaTwitter className="cursor-pointer" />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+
               <FaLinkedinIn className="cursor-pointer" />
+              </a>
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="cursor-pointer" />
+              </a>
               <button
                 className="ml-4 bg-white text-[#9B1915] px-3 py-1 rounded text-sm font-semibold"
                 onClick={() => navigate("/contact-us")}
@@ -124,9 +145,11 @@ export function Navbar() {
                 <Link to="/contact-us">CONTACT US</Link>
               </li>
             </ul>
-            <button className="bg-[#9B1915] text-white px-5 py-2 ms-5 rounded flex items-center gap-2 font-semibold">
+            
+            <button className="bg-[#9B1915] text-white px-5 py-2 ms-5 rounded flex items-center gap-2 font-semibold" onClick={() => navigate("/contact-us")}>
               CALL US: 01785 318 881<FaArrowRight />
             </button>
+      
           </div>
         </div>
       </div>
@@ -162,9 +185,8 @@ export function Navbar() {
               >
                 <span>ROOFING SERVICES</span>
                 <FaChevronDown
-                  className={`transition-transform duration-200 ${
-                    roofingOpen ? "rotate-180" : ""
-                  }`}
+                  className={`transition-transform duration-200 ${roofingOpen ? "rotate-180" : ""
+                    }`}
                 />
               </div>
               {roofingOpen && (

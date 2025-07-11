@@ -4,7 +4,7 @@ import location from "../../../assets/location.svg";
 import email from "../../../assets/email.svg";
 import qualityRoof from "../../../assets/contact-roof-repair.svg";
 import contactIcon from "../../../assets/contact-icon.svg";
-import map from "../../../assets/map.png";
+import map from "../../../assets/map.webp";
 
 export function ContactSection() {
   return (
@@ -58,7 +58,7 @@ export function ContactSection() {
                   <img
                     src={contactIcon}
                     alt="contactIcon"
-                    className="w-8 h-8 text-white"
+                    className="w-6 h-8 text-white"
                   />
                 }
                 title="Call Us"
@@ -66,7 +66,7 @@ export function ContactSection() {
               />
               <ContactInfoCard
                 icon={
-                  <img src={email} alt="Email" className="w-8 h-8 text-white" />
+                  <img src={email} alt="Email" className="w-6 h-8 text-white" />
                 }
                 title="Email Us"
                 content="info@righteousroofingltd.co.uk"
@@ -76,7 +76,7 @@ export function ContactSection() {
                   <img
                     src={location}
                     alt="Location"
-                    className="w-8 h-8 text-white"
+                    className="w-6 h-8 text-white"
                   />
                 }
                 title="Address"
@@ -87,7 +87,7 @@ export function ContactSection() {
                   <img
                     src={qualityRoof}
                     alt="Quality Roof"
-                    className="w-8 h-8 text-white"
+                    className="w-6 h-8 text-white"
                   />
                 }
                 title="Quality Roof"

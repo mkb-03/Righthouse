@@ -18,14 +18,14 @@ export function CoreValuesSection() {
             Our Mission
           </h3>
           <p className="text-sm text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor.
+            To deliver expert roofing solutions with honesty, quality, and customer-first service. We aim to protect and enhance every property we work on through dependable craftsmanship and transparent communication.
+
           </p>
         </div>
 
         <div className="bg-[#9B1915] text-center p-6 shadow-sm text-white">
           <div className="flex justify-center mb-4">
-          <img
+            <img
               src={ourVision}
               alt="ourVision"
               className="w-10 h-10 text-red-700"
@@ -33,14 +33,13 @@ export function CoreValuesSection() {
           </div>
           <h3 className="text-lg font-semibold mb-2">Our Vision</h3>
           <p className="text-sm">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor.
+            To be the most trusted roofing company in Staffordshire and surrounding areas, known for innovation, reliability, and long-lasting results in both residential and commercial roofing projects.
           </p>
         </div>
 
         <div className="bg-[#F3F1F2] text-center p-6 shadow-sm">
           <div className="flex justify-center mb-4">
-          <img
+            <img
               src={trustedServices}
               alt="trustedServices"
               className="w-10 h-10 text-red-700"
@@ -50,8 +49,8 @@ export function CoreValuesSection() {
             Trusted Services
           </h3>
           <p className="text-sm text-gray-600">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-            eiusmod tempor.
+            Righteous Roofing Ltd offers fully insured, professional roofing services—tailored to your needs. From new installations to emergency repairs, we ensure top-quality results that stand the test of time.
+
           </p>
         </div>
       </div>

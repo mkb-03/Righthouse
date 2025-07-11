@@ -1,7 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
-import roofRepair from "../../../assets/roof-repair.jpg";
-import roofReplacement from "../../../assets/roof-replacement.jpg";
-import flatRoofing from "../../../assets/flat-roofing.jpg";
+import roofRepair from "../../../assets/roof-repair.webp";
+import roofReplacement from "../../../assets/roof-replacement.webp";
+import flatRoofing from "../../../assets/flat-roofing.webp";
 import award from "../../../assets/award.svg";
 import { useNavigate } from "react-router-dom";
 

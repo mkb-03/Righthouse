@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 import { BookAppointment } from "./book-appointment";
-import logo from "../../assets/logo-color.png";
+import logo from "../../assets/logo-color.webp";
 import { Link } from "react-router-dom";
 
 export function Footer() {
@@ -30,30 +30,30 @@ export function Footer() {
                   </div>
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor
+                  We proudly serve customers in:
+                  Stoke-on-Trent, Stafford, Cannock, Wolverhampton, Nantwich, Tamworth, and all nearby areas.
                 </p>
                 <div className="flex gap-3">
                   <a
-                    href="#"
+                    href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-[#9B1915] transition-colors"
                   >
                     <FaFacebookF className="w-4 h-4" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-[#9B1915] transition-colors"
                   >
                     <FaTwitter className="w-4 h-4" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-[#9B1915] transition-colors"
                   >
                     <FaLinkedinIn className="w-4 h-4" />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
                     className="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center text-white hover:bg-[#9B1915] transition-colors"
                   >
                     <FaInstagram className="w-4 h-4" />
