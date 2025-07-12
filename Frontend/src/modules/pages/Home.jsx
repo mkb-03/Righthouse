@@ -20,7 +20,6 @@ export function Home() {
       <Booking />
       <WhyChooseUs />
       <ServicesSection />
-
       <PortfolioSection
         title="Portfolio"
         subtitle="Our Featured Projects"

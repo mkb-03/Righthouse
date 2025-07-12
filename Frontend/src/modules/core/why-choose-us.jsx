@@ -8,7 +8,7 @@ import { Counter } from "./counter";
 export function WhyChooseUs() {
   return (
     <div className="w-full relative my-15 ">
-      <div className="absolute left-1/2 top-4 transform -translate-x-1/2 z-20 max-w-5xl w-full px-6 mx-auto lg:block hidden">
+      <div className="absolute left-1/2 top-0 transform -translate-x-1/2 z-20 max-w-5xl w-full px-6 mx-auto lg:block hidden">
         <Counter />
       </div>
 
