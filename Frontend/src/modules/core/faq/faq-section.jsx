@@ -18,7 +18,7 @@ export function FaqSection({
   };
 
   return (
-    <div className="py-16 bg-[#F3F1F2]">
+    <div className="py-8 bg-[#F3F1F2]">
       <div className="max-w-6xl mx-auto px-6">
         <div className={`grid gap-12 items-center ${gridClass}`}>
           <div className="space-y-8">

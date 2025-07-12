@@ -87,4 +87,13 @@ body {
     width: calc(var(--spacing) * 12);
     height: 32px !important;
 }
+.w-80{
+  width: 265px;
+}
+.text-red-150{
+  font-size: 13px !important;
+}
+.w-50{
+  width: calc(var(--spacing) * 10);
+}
 }

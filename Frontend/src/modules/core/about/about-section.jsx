@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 export function AboutSection() {
   const navigate = useNavigate();
   return (
-    <div className="py-16 bg-white">
+    <div className="py-8 bg-white">
       <div className="max-w-6xl w-full mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
         <div className="relative grid grid-cols-2 gap-4">
           <div className="row-span-2">

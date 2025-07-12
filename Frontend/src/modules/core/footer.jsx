@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
-    <div className="w-full relative mt-50">
+    <div className="w-full relative mt-25">
       <div className="absolute left-1/2 -top-15 transform -translate-x-1/2 z-20 w-11/12 max-w-6xl md:block hidden">
         <BookAppointment />
       </div>

@@ -10,6 +10,36 @@ export function BookingForm({ inputHeight = "h-12", inputPadding = "p-8" }) {
         </h2>
 
         <form className="space-y-6">
+          onSubmit={async (e) => {
+            e.preventDefault();
+
+            const formData = {
+              name: e.target[0].value,
+              email: e.target[1].value,
+              date: e.target[2].value,
+              location: e.target[3].value,
+              message: e.target[4].value,
+            };
+
+            try {
+              const res = await fetch("http://localhost:5000/api/book-roof", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formData),
+              });
+
+              const data = await res.json();
+              if (res.ok) {
+                alert("Booking submitted!");
+              } else {
+                alert(data.error || "Something went wrong.");
+              }
+            } catch (err) {
+              console.error(err);
+              alert("Error submitting the form.");
+            }
+          }}
+
           <input
             type="text"
             placeholder="Write your name"

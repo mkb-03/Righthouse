@@ -35,7 +35,7 @@ export function ContactDetailsSection() {
                   <img
                     src={contactIcon}
                     alt="contactIcon"
-                    className="w-5 h-8 text-white"
+                    className="w-50 h-8 text-white"
                   />
                 }
                 title="Call Us"
@@ -46,7 +46,7 @@ export function ContactDetailsSection() {
                   <img
                     src={email}
                     alt="Email"
-                    className="w-5 h-8 text-white"
+                    className="w-50 h-8 text-white"
                   />
                 }
                 title="Email Us"
@@ -57,7 +57,7 @@ export function ContactDetailsSection() {
                   <img
                     src={location}
                     alt="Location"
-                    className="w-5 h-8 text-white"
+                    className="w-50 h-8 text-white"
                   />
                 }
                 title="Address"
@@ -68,7 +68,7 @@ export function ContactDetailsSection() {
                   <img
                     src={qualityRoof}
                     alt="Quality Roof"
-                    className="w-5 h-8 text-white"
+                    className="w-50 h-8 text-white"
                   />
                 }
                 title="Quality Roof"
