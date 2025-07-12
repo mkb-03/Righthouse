@@ -1,4 +1,4 @@
-import { ContactInfoCard } from "./contact-info-card";
+import { ContactInfoCard } from "./contact-info-card-2";
 import { QueryForm } from "../faq/query-form";
 import location from "../../../assets/location.svg";
 import email from "../../../assets/email.svg";

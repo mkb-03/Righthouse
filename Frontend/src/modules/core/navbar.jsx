@@ -53,31 +53,31 @@ export function Navbar() {
               <div className="flex items-center gap-2">
                 <Link to="/contact-us">
                   <FaPhoneAlt />
-                  </Link>
-                  <span>01785 318 881</span>
+                </Link>
+                <span><a href="tel:01785 318 881">01785 318 881</a></span>
               </div>
               <div className="flex items-center gap-2">
-                <Link to="/contact-us">
+
                 <FaEnvelope />
-                </Link>
-                <span>info@righteousroofingltd.co.uk</span>
+
+                <span><a href="mailto:info@righteousroofingltd.co.uk">info@righteousroofingltd.co.uk</a></span>
               </div>
             </div>
             <div className="flex items-center gap-4">
               <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
 
-              <FaFacebookF className="cursor-pointer" />
+                <FaFacebookF className="cursor-pointer" />
               </a>
               <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
 
-              <FaTwitter className="cursor-pointer" />
+                <FaTwitter className="cursor-pointer" />
               </a>
               <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
 
-              <FaLinkedinIn className="cursor-pointer" />
+                <FaLinkedinIn className="cursor-pointer" />
               </a>
               <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="cursor-pointer" />
+                <FaInstagram className="cursor-pointer" />
               </a>
               <button
                 className="ml-4 bg-white text-[#9B1915] px-3 py-1 rounded text-sm font-semibold"
@@ -145,11 +145,11 @@ export function Navbar() {
                 <Link to="/contact-us">CONTACT US</Link>
               </li>
             </ul>
-            
+
             <button className="bg-[#9B1915] text-white px-5 py-2 ms-5 rounded flex items-center gap-2 font-semibold" onClick={() => navigate("/contact-us")}>
               CALL US: 01785 318 881<FaArrowRight />
             </button>
-      
+
           </div>
         </div>
       </div>
@@ -290,12 +290,11 @@ export function Navbar() {
                 CONTACT US
               </Link>
             </li>
-
-            <li>
-              <button className="mt-4 bg-[#9B1915] text-white px-5 py-2 rounded flex items-center mx-auto gap-2 font-semibold">
-                CALL US: 1234567 <FaArrowRight />
-              </button>
-            </li>
+              <li>
+                <button className="mt-4 bg-[#9B1915] text-white px-5 py-2 rounded flex items-center mx-auto gap-2 font-semibold">
+                  CALL US: 1234567<FaArrowRight />
+                </button>
+              </li>
           </ul>
         </div>
       )}

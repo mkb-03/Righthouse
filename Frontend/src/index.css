@@ -68,3 +68,23 @@ body {
 .btn-zoom:focus .btn-zoom-content {
   transform: scale(1.1);
 }
+
+.text-sm{
+  font-size: 13px;
+}
+@media screen and (min-width:999px){
+  .py-1 {
+    padding-block: 11px;
+}
+.bg-gray-700.text-white.flex-1.md\:basis-\[60\%\].p-8.lg\:p-12.flex.flex-col.justify-center
+ {
+    padding-left: 150px;
+}
+.bg-\[\#9B1915\].text-white.p-2.w-70.rounded-lg.flex.items-center.gap-1 {
+    width: 325px;
+}
+.w-6{
+    width: calc(var(--spacing) * 12);
+    height: 32px !important;
+}
+}
