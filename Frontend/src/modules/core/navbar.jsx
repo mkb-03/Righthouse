@@ -89,7 +89,7 @@ export function Navbar() {
           </div>
 
           {/* Bottom Row: Nav + Call Button */}
-          <div className="bg-white px-4 py-3 flex items-center justify-center">
+          <div className="bg-white px-4 py-1 flex items-center justify-center">
             <ul className="flex flex-wrap lg:flex-nowrap gap-4 xl:gap-5 text-sm font-semibold text-[#2a232c]">
               <li className="hover:text-[#9B1915] cursor-pointer">
                 <Link to="/">HOME</Link>
