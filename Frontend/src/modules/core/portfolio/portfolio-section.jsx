@@ -30,7 +30,7 @@ export function PortfolioSection({ title, subtitle, buttonText }) {
   }, [activeFilter]);
 
   return (
-    <div className="py-16 bg-white relative">
+    <div className="py-8 bg-white relative">
       <div className="max-w-6xl w-full mx-auto px-6">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center text-center gap-3">

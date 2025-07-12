@@ -70,7 +70,7 @@ export const services = [
 export function ServicesSection() {
   const navigate = useNavigate();
   return (
-    <section className="py-16">
+    <section className="py-8">
       <div className="max-w-6xl w-full mx-auto px-6">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center text-center gap-3">

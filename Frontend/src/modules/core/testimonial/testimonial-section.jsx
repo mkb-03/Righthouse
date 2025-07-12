@@ -85,7 +85,7 @@ export function TestimonialsSection() {
   }, []);
 
   return (
-    <div className="py-16 bg-gray-50 relative">
+    <div className="py-8 white relative">
       <div className="max-w-6xl w-full mx-auto px-6">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3">
