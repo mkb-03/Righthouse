@@ -66,7 +66,7 @@ export function SingleService({
   return (
     <>
       <PageHeader title="Services" secondTitle={serviceData.activeService} />
-      <div className="bg-[#F8F8F8] min-h-screen py-10">
+      <div className="white min-h-screen py-10">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-10 px-4">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8 ">
